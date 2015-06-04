@@ -8791,16 +8791,12 @@ header .dropdown
 
     position: absolute;
     bottom: 20px;
-
-    width: 200px;
 }
 @media (max-width: 340px)
 {
     header .dropdown
     {
         bottom: 10px;
-
-        width: 150px;
     }
 }
 header .dropdown .btn-default
@@ -8813,6 +8809,13 @@ header .dropdown .btn-default
 
     border: 1px solid #1c75ba;
     border-radius: 0;
+}
+@media (max-width: 340px)
+{
+    header .dropdown .btn-default
+    {
+        width: 150px;
+    }
 }
 header .dropdown .btn-default:hover,
 header .dropdown .btn-default:focus
