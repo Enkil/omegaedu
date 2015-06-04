@@ -8845,6 +8845,13 @@ header .dropdown-menu
 
     border-radius: 0;
 }
+@media (max-width: 340px)
+{
+    header .dropdown-menu
+    {
+        width: 150px;
+    }
+}
 header .dropdown-menu a
 {
     font-size: 14px;
@@ -8930,7 +8937,7 @@ header .dropdown-menu a:hover
 {
     .om-header__phone
     {
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 .om-header__callback
