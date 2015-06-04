@@ -21,6 +21,11 @@ header {
     .dinpro-reg;
     position: absolute;
     bottom: 20px;
+    width: 200px;
+    @media (max-width: 340px) {
+      width: 150px;
+      bottom: 10px;
+    }
   }
 
   .dropdown .btn-default {
@@ -29,11 +34,7 @@ header {
     height: 41px;
     padding-left: 14px;
     padding-right: 20px;
-    width: 200px;
     text-align: left;
-    @media (max-width: 340px) {
-      width: 150px;
-    }
     &:hover, &:focus{
       background-color: transparent;
     }
