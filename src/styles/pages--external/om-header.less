@@ -1,0 +1,135 @@
+.om-header{
+  height: 155px;
+  &__logogroup{
+    display: table;
+    height: 155px;
+  }
+  &__logo{
+    display: table-cell;
+    width: 114px;
+    height: 119px;
+    margin-top: 15px;
+  }
+  &__group{
+    display: table-cell;
+    padding-left: 30px;
+    width: 85%;
+  }
+  &__slogan{
+    color: #1c75ba;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  &__city-dropdown{
+  }
+  &__icon-group{
+    font-size: 32px;
+    margin-top: 25px;
+    > a{
+      color: #e6e6e6;
+      transition: all ease 0.5s;
+      cursor: pointer;
+      &:hover{
+          color: #e82d40;
+      }
+        > i:before{
+            margin-right: 0;
+            margin-left: 0;
+          }
+    }
+  }
+  &__phone{
+    font-style: italic;
+    font-size: 16px;
+    color: #ff3333;
+    margin-top: 10px;
+  }
+  &__callback{
+    font-style: italic;
+    font-size: 0;
+    position: relative;
+    margin-top: 10px;
+
+    > i{
+      height: 30px;
+      color: #e82d40;
+      transition: all ease 0.5s;
+      cursor: pointer;
+      vertical-align: middle;
+      display: inline-block;
+      &:hover{
+        color: #e6e6e6;
+        ~ .om-header__callme-form{
+          display: block;
+        }
+      }
+      &:before{
+        font-size: 32px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  &__callme{
+    .pull-right;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #e82d40;
+    display: block;
+    background-color: #e6e6e6;
+    line-height: 30px;
+    border-radius: 8px;
+    width: 185px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 8px;
+
+    &:hover{
+      border-radius: 8px 8px 0 0;
+      + .om-header__callme-form{
+        display: block;
+      }
+    }
+  }
+  &__callme-form{
+    .pull-right;
+    display: none;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    height: 185px;
+    width: 185px;
+    padding: 10px 18px 15px 18px;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    z-index: 50;
+    transition: all ease 0.5s;
+    &:hover{
+      display: block;
+    }
+      input{
+        line-height: 30px;
+        text-align: center;
+        color: #666666;
+        margin-bottom: 8px;
+        width: 100%;
+      }
+      button{
+        background-color: #e82d40;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        line-height: 30px;
+        color: #ffffff;
+        border: none;
+        padding: 0;
+        transition: all ease 0.5s;
+        &:hover{
+          background-color: #e6e6e6;
+          color: #e82d40;
+          border: 1px solid #e82d40;
+        }
+     }
+  }
+}
