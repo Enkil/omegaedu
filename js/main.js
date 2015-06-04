@@ -13710,7 +13710,7 @@ $(document).ready(function() {
             }
         )
             .fail(function () {
-                alert("error");
+                alert("error reading XML");
             })
     };
     
@@ -13718,6 +13718,6 @@ $(document).ready(function() {
     
         var myLatLng = new google.maps.LatLng(55.804400, 37.585939); // Set map center
     
-        omega.init('#omega-on-map', myLatLng, 10, './omega-on-map.xml'); // Init omega on map function
-    };
+        omega.init('#omega-on-map', myLatLng, 15, './omega-on-map.xml'); // Init omega on map function
+    }
 });
