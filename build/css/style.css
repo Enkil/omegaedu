@@ -8850,6 +8850,7 @@ header .dropdown-menu
     header .dropdown-menu
     {
         width: 150px;
+        min-width: 150px;
     }
 }
 header .dropdown-menu a
