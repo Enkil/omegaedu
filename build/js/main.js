@@ -13681,12 +13681,12 @@ $(document).ready(function() {
                                     '<img src="img/images/omega-logo.png">' +
                                 '</div>' +
                                 '<div class="col-xs-8">' +
-                                    '<p>Город:' + city + '</p>' +
-                                    '<p>Метро:' + subway + ' </p>' +
-                                    '<p>Улица:' + street + ' </p>' +
-                                    '<p>Дом:' + house + ' </p>' +
-                                    '<p>Строение:' + building + ' </p>' +
-                                    '<p>Вход:' + door + ' </p>' +
+                                    '<p>Город: ' + city + '</p>' +
+                                    '<p>Метро: ' + subway + ' </p>' +
+                                    '<p>Улица: ' + street + ' </p>' +
+                                    '<p>Дом: ' + house + ' </p>' +
+                                    '<p>Строение: ' + building + ' </p>' +
+                                    '<p>Вход: ' + door + ' </p>' +
                                 '</div>' +
                             '</div>' +
                         '</div>';
@@ -13710,7 +13710,7 @@ $(document).ready(function() {
             }
         )
             .fail(function () {
-                alert("error");
+                alert("error reading XML");
             })
     };
     

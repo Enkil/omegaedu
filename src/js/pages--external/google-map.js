@@ -74,12 +74,12 @@ omega.init = function (selector, latLng, zoom, filename) { // Init map function
                                 '<img src="img/images/omega-logo.png">' +
                             '</div>' +
                             '<div class="col-xs-8">' +
-                                '<p>Город:' + city + '</p>' +
-                                '<p>Метро:' + subway + ' </p>' +
-                                '<p>Улица:' + street + ' </p>' +
-                                '<p>Дом:' + house + ' </p>' +
-                                '<p>Строение:' + building + ' </p>' +
-                                '<p>Вход:' + door + ' </p>' +
+                                '<p>Город: ' + city + '</p>' +
+                                '<p>Метро: ' + subway + ' </p>' +
+                                '<p>Улица: ' + street + ' </p>' +
+                                '<p>Дом: ' + house + ' </p>' +
+                                '<p>Строение: ' + building + ' </p>' +
+                                '<p>Вход: ' + door + ' </p>' +
                             '</div>' +
                         '</div>' +
                     '</div>';
@@ -103,7 +103,7 @@ omega.init = function (selector, latLng, zoom, filename) { // Init map function
         }
     )
         .fail(function () {
-            alert("error");
+            alert("error reading XML");
         })
 };
 
@@ -112,4 +112,4 @@ if ($("#omega-on-map").length) {
     var myLatLng = new google.maps.LatLng(55.804400, 37.585939); // Set map center
 
     omega.init('#omega-on-map', myLatLng, 15, './omega-on-map.xml'); // Init omega on map function
-};
+}
