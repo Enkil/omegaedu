@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<offices>
+
+    <office>
+
+        <city>Москва</city>
+        <subway>Дмитровская</subway>
+        <street>Большая Новодмитровская</street>
+        <house>36</house>
+        <building>12</building>
+        <door>7</door>
+        <lat>55.804400</lat>
+        <lng>37.585939</lng>
+
+    </office>
+
+</offices>

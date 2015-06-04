@@ -6,4 +6,5 @@ $(document).ready(function() {
 
     /* Custom */
 
+    //= pages--external/google-map.js
 });
