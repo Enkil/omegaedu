@@ -1,0 +1,48 @@
+footer{
+  background-color: @grey;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.om-footer{
+
+  &__logo{
+    text-align: center;
+    display: block;
+  }
+  &__contacts{
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    color: @dark;
+    &--thirst{
+      margin-top: 30px;
+    }
+  }
+  &__links-list{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  &__links{
+    font-size: 18px;
+    color: @blue;
+    line-height: 52px;
+    text-decoration: none;
+  }
+  &__blackquote-img{
+    display: inline-block;
+    width: 117px;
+    height: 118px;
+    margin-right: 25px;
+  }
+  &__blackquote-txt{
+    font-weight: 300;
+    font-size: 25px;
+    color: @dark;
+
+    > q{
+      quotes: "\00ab" "\00bb";
+    }
+  }
+}
