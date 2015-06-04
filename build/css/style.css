@@ -9287,3 +9287,8 @@ footer
 {
     quotes: '\00ab' '\00bb';
 }
+#omega-on-map
+{
+    width: 100%;
+    height: 400px;
+}

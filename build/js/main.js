@@ -13631,7 +13631,7 @@ $(document).ready(function() {
             draggable: true,
             overviewMapControl: true,
             overviewMapControlOptions: {
-                opened: false,
+                opened: false
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
