@@ -74,7 +74,7 @@ var projectPath = {
         svgSprite: 'src/img/sprites/svg/**/*.svg',
         fonts: 'src/styles/fonts/**/*.*'
     },
-    clean: ['build/**/*', '!build/.gitignore', '!build/humans.txt'], // Set paths and exludes for cleaning build dir
+    clean: ['build/**/*', '!build/.gitignore', '!build/humans.txt', '!build/omega-on-map.xml'], // Set paths and exludes for cleaning build dir
     ghPages: 'build/**/*' // Set dir that will be uploaded to GitHub Pages
 };
 
