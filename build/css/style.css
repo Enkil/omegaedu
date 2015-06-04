@@ -8804,6 +8804,13 @@ header .dropdown .btn-default
     border: 1px solid #1c75ba;
     border-radius: 0;
 }
+@media (max-width: 340px)
+{
+    header .dropdown .btn-default
+    {
+        width: 150px;
+    }
+}
 header .dropdown .btn-default:hover,
 header .dropdown .btn-default:focus
 {
@@ -8913,6 +8920,13 @@ header .dropdown-menu a:hover
 
     color: #f33;
 }
+@media (max-width: 340px)
+{
+    .om-header__phone
+    {
+        font-size: 14px;
+    }
+}
 .om-header__callback
 {
     font-size: 0;
@@ -8921,6 +8935,13 @@ header .dropdown-menu a:hover
     position: relative;
 
     margin-top: 10px;
+}
+@media (max-width: 615px)
+{
+    .om-header__callback
+    {
+        display: none;
+    }
 }
 .om-header__callback > i
 {
