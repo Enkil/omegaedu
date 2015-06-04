@@ -13665,12 +13665,12 @@ $(document).ready(function() {
                     var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
     
                     // extend the bounds to include the new point
-                    docs.bounds.extend(point);
+                    omega.bounds.extend(point);
     
                     var marker = new google.maps.Marker({
                         icon: markerImage,
                         position: point,
-                        map: docs.map
+                        map: omega.map
                     });
     
                     var infoWindow = new google.maps.InfoWindow();
@@ -13694,9 +13694,9 @@ $(document).ready(function() {
                     google.maps.event.addListener(marker, 'click', function () {
                         infoWindow.setContent(html);
                         marker.setIcon(markerImageHover);
-                        infoWindow.open(docs.map, marker);
+                        infoWindow.open(omega.map, marker);
                     });
-                    docs.map.fitBounds(docs.bounds);
+                    omega.map.fitBounds(omega.bounds);
     
                     google.maps.event.addListener(marker, 'mouseover', function () {
                         marker.setIcon(markerImageHover);
@@ -13718,6 +13718,6 @@ $(document).ready(function() {
     
         var myLatLng = new google.maps.LatLng(55.804400, 37.585939); // Set map center
     
-        omega.init('#omega-on-map', myLatLng, 15, './omega-on-map.xml'); // Init docs on map function
+        omega.init('#omega-on-map', myLatLng, 15, './omega-on-map.xml'); // Init omega on map function
     }
 });
