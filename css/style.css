@@ -9075,6 +9075,10 @@ header .dropdown-menu a:hover
     border: 1px solid #e82d40;
     background-color: #e6e6e6;
 }
+.om-header__icon-vk-like
+{
+    display: inline-block;
+}
 @font-face
 {
     font-family: 'om-social';
