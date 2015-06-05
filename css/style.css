@@ -9296,3 +9296,27 @@ footer
     width: 100%;
     height: 400px;
 }
+.om-where__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 41px;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    color: #66c;
+}
+.om-where__address
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 36px;
+    line-height: 15px;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    color: #c33;
+}
