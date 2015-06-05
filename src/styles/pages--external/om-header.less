@@ -27,7 +27,7 @@
     margin-top: 25px;
     > a{
       color: @grey;
-      transition: all ease 0.5s;
+      .om-transition();
       cursor: pointer;
       &:hover{
           color: @red;
@@ -59,7 +59,7 @@
     > i{
       height: 30px;
       color: @red;
-      transition: all ease 0.5s;
+      .om-transition();
       cursor: pointer;
       vertical-align: middle;
       display: inline-block;
@@ -110,7 +110,7 @@
     right: 0;
     top: 24px;
     z-index: 50;
-    transition: all ease 0.5s;
+    .om-transition();
     &:hover{
       display: block;
     }
@@ -127,10 +127,10 @@
         text-align: center;
         width: 100%;
         line-height: 30px;
-        color: #ffffff;
+        color: @white;
         border: none;
         padding: 0;
-        transition: all ease 0.5s;
+        .om-transition();
         &:hover{
           background-color: @grey;
           color: @red;

@@ -8544,6 +8544,7 @@ button.close
 /***************************************************/
 /* Third party */
 /* Colors */
+/* Transition */
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -8915,8 +8916,8 @@ header .dropdown-menu a:hover
 .om-header__icon-group > a
 {
     cursor: pointer;
-    -webkit-transition: all ease .5s;
-            transition: all ease .5s;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
 
     color: #e6e6e6;
 }
@@ -8968,8 +8969,8 @@ header .dropdown-menu a:hover
     height: 30px;
 
     cursor: pointer;
-    -webkit-transition: all ease .5s;
-            transition: all ease .5s;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
     vertical-align: middle;
 
     color: #c33;
@@ -9032,8 +9033,8 @@ header .dropdown-menu a:hover
     height: 185px;
     padding: 10px 18px 15px 18px;
 
-    -webkit-transition: all ease .5s;
-            transition: all ease .5s;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
 
     border-radius: 0 0 8px 8px;
     background-color: #e6e6e6;
@@ -9061,8 +9062,8 @@ header .dropdown-menu a:hover
     width: 100%;
     padding: 0;
 
-    -webkit-transition: all ease .5s;
-            transition: all ease .5s;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
     text-align: center;
 
     color: #fff;
@@ -9279,13 +9280,27 @@ footer
     width: 117px;
     height: 118px;
     margin-right: 25px;
+
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+}
+.om-footer__blackquote-img:hover
+{
+    opacity: .5;
 }
 .om-footer__blackquote-txt
 {
     font-size: 25px;
     font-weight: 300;
 
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+
     color: #666;
+}
+.om-footer__blackquote-txt:hover
+{
+    opacity: .5;
 }
 .om-footer__blackquote-txt > q
 {
@@ -9319,4 +9334,72 @@ footer
     text-align: center;
 
     color: #c33;
+}
+.om-form
+{
+    padding-top: 45px;
+    padding-bottom: 65px;
+
+    background-color: #66c;
+}
+.om-form__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 41px;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.om-form__index
+{
+    width: 100%;
+
+    text-align: center;
+}
+.om-form__index-input
+{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 45px;
+
+    display: inline-block;
+
+    width: 210px;
+    height: 45px;
+    margin: 10px 13px;
+
+    text-align: center;
+
+    color: #66c;
+    background-color: #fff;
+}
+.om-form__index-submit
+{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+
+    display: inline-block;
+
+    width: 210px;
+    height: 45px;
+    margin: 10px 13px;
+
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+
+    color: #fff;
+    border: 1px solid #c33;
+    background-color: #c33;
+}
+.om-form__index-submit:hover
+{
+    color: #c33;
+    background-color: #fff;
 }

@@ -1,0 +1,48 @@
+.om-form{
+  background-color: @violet;
+  padding-top: 45px;
+  padding-bottom: 65px;
+  &__title{
+    .dinpro-reg;
+    .text-center;
+    font-size: 41px;
+    color: @white;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  &__index{
+    width: 100%;
+    text-align: center;
+  }
+  &__index-input{
+    display: inline-block;
+    margin: 10px 13px;
+    background-color: @white;
+    color: @violet;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    width: 210px;
+  }
+  &__index-submit{
+    display: inline-block;
+    margin: 10px 13px;
+    background-color: @red;
+    color: @white;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid @red;
+    height: 45px;
+    width: 210px;
+    .om-transition();
+    &:hover{
+      background-color: @white;
+      color: @red;
+    }
+  }
+}

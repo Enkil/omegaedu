@@ -16,7 +16,8 @@
   "devDependencies": {
     "bootstrap": "~3.3.4",
     "social-likes": "~3.0.14",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "swiper": "~3.0.7"
   },
   "dependencies": {}
 }
