@@ -8922,7 +8922,7 @@ header .dropdown-menu a:hover
 }
 .om-header__icon-group > a:hover
 {
-    color: #e82d40;
+    color: #c33;
 }
 .om-header__icon-group > a > i:before
 {
@@ -8936,7 +8936,7 @@ header .dropdown-menu a:hover
 
     margin-top: 10px;
 
-    color: #e82d40;
+    color: #c33;
 }
 @media (max-width: 340px)
 {
@@ -8972,7 +8972,7 @@ header .dropdown-menu a:hover
             transition: all ease .5s;
     vertical-align: middle;
 
-    color: #e82d40;
+    color: #c33;
 }
 .om-header__callback > i:hover
 {
@@ -9004,7 +9004,7 @@ header .dropdown-menu a:hover
     vertical-align: middle;
     text-transform: uppercase;
 
-    color: #e82d40;
+    color: #c33;
     border-radius: 8px;
     background-color: #e6e6e6;
 }
@@ -9067,12 +9067,12 @@ header .dropdown-menu a:hover
 
     color: #fff;
     border: none;
-    background-color: #e82d40;
+    background-color: #c33;
 }
 .om-header__callme-form button:hover
 {
-    color: #e82d40;
-    border: 1px solid #e82d40;
+    color: #c33;
+    border: 1px solid #c33;
     background-color: #e6e6e6;
 }
 .om-header__icon-vk-like
