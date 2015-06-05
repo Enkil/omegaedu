@@ -8,6 +8,19 @@ header {
     vertical-align: top;
   }
 
+  .navbar .nav > li a{
+    .om-transition();
+    &:hover{
+      border-bottom: 4px solid #000;
+    }
+  }
+
+  .active{
+    border-bottom: 4px solid #000;
+    color: #333!important;
+    background-color: transparent;
+  }
+
   .navbar-default{
     background-color: #e6e6e6;
     border: none;
@@ -22,7 +35,7 @@ header {
     position: absolute;
     bottom: 20px;
     @media (max-width: 340px) {
-      bottom: 10px;
+      top: 50px;
     }
   }
 
@@ -68,9 +81,9 @@ header {
     }
     a{
       font-size: 14px;
-      color: #666666;
-      transition: all ease 0.5s;
+      color: @dark;
       padding-left: 14px;
+      .om-transition();
       &:hover{
         font-size: 16px;
         color: #000;

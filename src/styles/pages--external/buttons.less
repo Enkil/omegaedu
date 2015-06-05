@@ -1,0 +1,40 @@
+.om-btn{
+  .om-transition();
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  &--cta{
+    background-color: @red;
+    color: @white;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid @red;
+    height: 45px;
+    line-height: 45px;
+    width: 210px;
+    &:hover{
+      background-color: @white;
+      color: @red!important;
+      text-decoration: none;
+    }
+    &:focus{
+      text-decoration: none;
+      color: @white;
+    }
+  }
+  &--index-form{
+    margin: 10px 13px;
+    line-height: normal;
+  }
+  &--header-callback{
+    font-size: 12px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    &:hover{
+      background-color: @grey;
+    }
+  }
+}

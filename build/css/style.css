@@ -8778,6 +8778,21 @@ header .navbar .nav > li a
 
     vertical-align: top;
 }
+header .navbar .nav > li a
+{
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+}
+header .navbar .nav > li a:hover
+{
+    border-bottom: 4px solid #000;
+}
+header .active
+{
+    color: #333!important;
+    border-bottom: 4px solid #000;
+    background-color: transparent;
+}
 header .navbar-default
 {
     border: none;
@@ -8798,7 +8813,7 @@ header .dropdown
 {
     header .dropdown
     {
-        bottom: 10px;
+        top: 50px;
     }
 }
 header .dropdown .btn-default
@@ -8862,8 +8877,8 @@ header .dropdown-menu a
 
     padding-left: 14px;
 
-    -webkit-transition: all ease .5s;
-            transition: all ease .5s;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
 
     color: #666;
 }
@@ -8898,6 +8913,13 @@ header .dropdown-menu a:hover
 
     width: 85%;
     padding-left: 30px;
+}
+@media (max-width: 340px)
+{
+    .om-header__group
+    {
+        padding-left: 0;
+    }
 }
 .om-header__slogan
 {
@@ -9030,7 +9052,6 @@ header .dropdown-menu a:hover
     float: right !important;
 
     width: 185px;
-    height: 185px;
     padding: 10px 18px 15px 18px;
 
     -webkit-transition: .5s ease all;
@@ -9042,39 +9063,6 @@ header .dropdown-menu a:hover
 .om-header__callme-form:hover
 {
     display: block;
-}
-.om-header__callme-form input
-{
-    line-height: 30px;
-
-    width: 100%;
-    margin-bottom: 8px;
-
-    text-align: center;
-
-    color: #e6e6e6;
-}
-.om-header__callme-form button
-{
-    font-size: 12px;
-    line-height: 30px;
-
-    width: 100%;
-    padding: 0;
-
-    -webkit-transition: .5s ease all;
-            transition: .5s ease all;
-    text-align: center;
-
-    color: #fff;
-    border: none;
-    background-color: #c33;
-}
-.om-header__callme-form button:hover
-{
-    color: #c33;
-    border: 1px solid #c33;
-    background-color: #e6e6e6;
 }
 .om-header__icon-vk-like
 {
@@ -9306,6 +9294,62 @@ footer
 {
     quotes: '\00ab' '\00bb';
 }
+.om-btn
+{
+    display: inline-block;
+
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+    text-align: center;
+
+    outline: none;
+}
+.om-btn--cta
+{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 45px;
+
+    width: 210px;
+    height: 45px;
+
+    color: #fff;
+    border: 1px solid #c33;
+    background-color: #c33;
+}
+.om-btn--cta:hover
+{
+    text-decoration: none;
+
+    color: #c33 !important;
+    background-color: #fff;
+}
+.om-btn--cta:focus
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+.om-btn--index-form
+{
+    line-height: normal;
+
+    margin: 10px 13px;
+}
+.om-btn--header-callback
+{
+    font-size: 12px;
+    line-height: 30px;
+
+    width: 100%;
+    height: 30px;
+    padding: 0;
+}
+.om-btn--header-callback:hover
+{
+    background-color: #e6e6e6;
+}
 #omega-on-map
 {
     width: 100%;
@@ -9355,18 +9399,24 @@ footer
 
     color: #fff;
 }
+@media (max-width: 360px)
+{
+    .om-form__title
+    {
+        font-size: 30px;
+    }
+}
 .om-form__index
 {
     width: 100%;
 
     text-align: center;
 }
-.om-form__index-input
+.om-form__input
 {
     font-size: 15px;
     font-weight: 400;
     font-style: italic;
-    line-height: 45px;
 
     display: inline-block;
 
@@ -9377,29 +9427,43 @@ footer
     text-align: center;
 
     color: #66c;
+    outline: none;
     background-color: #fff;
 }
-.om-form__index-submit
+.om-form__input--header-callback
 {
-    font-size: 15px;
-    font-weight: 400;
-    font-style: italic;
+    width: 100%;
+    height: 30px;
+    margin: 0 0 8px 0;
 
-    display: inline-block;
+    color: #66c;
+}
+.om-press
+{
+    padding-top: 40px;
+    padding-bottom: 30px;
 
-    width: 210px;
-    height: 45px;
-    margin: 10px 13px;
+    background-color: #f2c40d;
+}
+.om-press__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 35px;
 
-    -webkit-transition: .5s ease all;
-            transition: .5s ease all;
+    margin-top: 0;
+    margin-bottom: 10px;
 
     color: #fff;
-    border: 1px solid #c33;
-    background-color: #c33;
 }
-.om-form__index-submit:hover
+.om-press__click
 {
-    color: #c33;
-    background-color: #fff;
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 35px;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    text-transform: uppercase;
+
+    color: #fff;
 }
