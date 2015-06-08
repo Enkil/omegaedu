@@ -1,0 +1,74 @@
+.om-price{
+  text-align: center;
+  &__title{
+    .dinpro-reg;
+    font-size: 22px;
+    color: @blue;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  &__tariff-data{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    &--start:hover{
+      .om-price__info, .om-price__course-price{
+        background-color: lighten(@green,50%);
+      }
+    }
+    &--duble:hover{
+      .om-price__info, .om-price__course-price{
+                background-color: lighten(@yellow,50%);
+      }
+    }
+    &--optim:hover{
+      .om-price__info, .om-price__course-price{
+                background-color: lighten(@blue,50%);
+      }
+    }
+    &--max:hover{
+      .om-price__info, .om-price__course-price{
+                background-color: lighten(@red,50%);
+      }
+    }
+  }
+  &__tariff{
+    .dinpro-reg;
+    font-size: 24px;
+    color: @white;
+    text-transform: uppercase;
+    height: 50px;
+    &--start{  background-color: @green;  }
+    &--duble{ background-color: @yellow; }
+    &--optim{ background-color: @blue; }
+    &--max{ background-color: @red; }
+  }
+  &__info{
+    .dinpro-reg;
+    font-size: 22px;
+    color: @dark;
+    height: 70px;
+    line-height: 1;
+    border-bottom: 1px solid lighten(@dark,50%);
+    &--bold{ .dinpro-bold; }
+    &--free{  color: @red;  }
+    &--time{  .dinpro-bold; > span {  .dinpro-reg;  } }
+    &--free-ege{  color: @blue; vertical-align: bottom; height: 110px;}
+    &--last{  border-bottom:none  }
+  }
+  &__course-price{
+    .dinpro-bold;
+    font-size: 18px;
+    color: @blue;
+    margin-bottom: 32px;
+    height: 50px;
+    vertical-align: top;
+    &--month{  font-size: 36px; vertical-align: bottom; height: 80px;}
+  }
+  &__check{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+}

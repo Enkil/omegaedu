@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-    /* Custom */
-
     //= pages--external/google-map.js
+    //= pages--external/opacity-on-hover.js
+
 });

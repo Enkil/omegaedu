@@ -1,5 +1,6 @@
 {{#sprites}}
 .svg-sprite--{{fileName}} {
+    display: inline-block;
     background-image: url("{{{cssPathSvg}}}");
     background-position: {{x}}{{units}} {{y}}{{units}};
     width: {{w}}{{units}};
