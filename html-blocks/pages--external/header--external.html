@@ -5,9 +5,9 @@
         <div class="row om-header">
 
             <div class="col-xs-7 om-header__logogroup">
-                <a class="om-header__logo visible-lg visible-md visible-sm" href="index.html"><img src="img/images/omega-logo.png" alt=""/></a>
+                <a class="om-header__logo hidden-xs" href="index.html"><img src="img/images/omega-logo.png" alt="ОМЕГА - все, что нужно для экзаменов"/></a>
                 <div class="om-header__group">
-                    <div class="om-header__slogan">Все, что нужно для экзаменов</div>
+                    <div class="om-header__slogan hidden-xs">Все, что нужно для экзаменов</div>
                     <div class="dropdown om-header__city-dropdown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                             выберите город
@@ -38,10 +38,10 @@
                     <span class="om-header__callme">Перезвоните мне</span>
                     <div class="om-header__callme-form">
                         <form action="">
-                            <input type="text" required placeholder="фамилия"/>
-                            <input type="text" required placeholder="имя"/>
-                            <input type="tel" required placeholder="телефон"/>
-                            <button type="submit">оставить заявку</button>
+                            <input type="text" class="om-form__input om-form__input--header-callback" required placeholder="фамилия"/>
+                            <input type="text" class="om-form__input om-form__input--header-callback" required placeholder="имя"/>
+                            <input type="tel" class="om-form__input om-form__input--header-callback" required placeholder="телефон"/>
+                            <button type="submit" class="om-btn om-btn--cta om-btn--header-callback">оставить заявку</button>
                         </form>
                     </div>
                 </div>
@@ -65,16 +65,18 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="">О Центре</a></li>
-                <li><a href="">Предметы</a></li>
-                <li><a href="">Преподаватели</a></li>
+                <li><a href="index.html#directions-main">Предметы</a></li>
+                <li><a href="" class="active">Преподаватели</a></li>
                 <li><a href="">Отзывы</a></li>
                 <li><a href="">Расписание</a></li>
-                <li><a href="">Цены</a></li>
+                <li><a href="price.html">Цены</a></li>
                 <li><a href="">Франчайзинг</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
 
     </div>
 
 </header>
+
+<!--TODO: бутерброд в меню при ширине в 970px-->
