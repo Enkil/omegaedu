@@ -22695,13 +22695,10 @@ $(document).ready(function() {
     
     var mySwiper2 = new Swiper ('.swiper-container-2', {
     // Optional parameters
-    //    slidesPerView: 1,
         keyboardControl: true,
         mousewheelControl: true,
-        spaceBetween: 30,
         centeredSlides: true,
         grabCursor: true,
-        pagination: '.swiper-pagination',
         effect: 'coverflow',
         slidesPerView: 'auto',
         coverflow: {
@@ -22726,5 +22723,13 @@ $(document).ready(function() {
             $('#cta-form-btn').html('Спасибо');
         });
     }
+    // Instantiate MixItUp:
+    
+    $('#mixitup').mixItUp({
+        controls: {
+            toggleFilterButtons: true,
+            activeClass: 'om-teachers__filter-btn--pressed'
+        }
+    });
 
 });

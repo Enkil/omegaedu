@@ -8547,6 +8547,7 @@ button.close
 /***************************************************/
 /* Third party */
 /* Colors */
+/* Lessons ng colors */
 /* Transition */
 /* Shadows */
 /* Opacity */
@@ -8607,7 +8608,15 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 */
 .svg-sprite--bio
 {
+    display: inline-block;
+
+    width: 94px;
+    height: 94px;
+
+    background-image: url('../img/sprites/svg/svg-sprite.svg');
+    background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--bio
 {
@@ -8623,7 +8632,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -94px 0;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--chemistry
 {
@@ -8639,7 +8648,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: 0 -94px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--en
 {
@@ -8655,7 +8664,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -94px -94px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--history
 {
@@ -8671,7 +8680,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -188px 0;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--inf
 {
@@ -8687,7 +8696,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -188px -94px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--math
 {
@@ -8703,7 +8712,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: 0 -187px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--phys
 {
@@ -8719,7 +8728,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -94px -187px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--rus
 {
@@ -8735,9 +8744,25 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
     background-position: -188px -187px;
-    background-size: 281px 280px;
+    background-size: 307px 280px;
 }
 .no-svg .svg-sprite--sociology
+{
+    background-image: url('../img/sprites/svg/svg-sprite.png');
+}
+.svg-sprite--check
+{
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url('../img/sprites/svg/svg-sprite.svg');
+    background-repeat: no-repeat;
+    background-position: -281px 0;
+    background-size: 307px 280px;
+}
+.no-svg .svg-sprite--check
 {
     background-image: url('../img/sprites/svg/svg-sprite.png');
 }
@@ -9241,6 +9266,7 @@ div
 }
 footer
 {
+    margin-top: 20px;
     padding-top: 35px;
     padding-bottom: 60px;
 
@@ -10155,16 +10181,104 @@ footer
 {
     margin-top: 50px;
 }
+.om-teachers__teacher
+{
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+}
+.om-teachers__teacher--rus:hover
+{
+    background-color: #f06342;
+}
+.om-teachers__teacher--math:hover
+{
+    background-color: #f2c40d;
+}
+.om-teachers__teacher--socio:hover
+{
+    background-color: #7acc78;
+}
+.om-teachers__teacher--chemistry:hover
+{
+    background-color: #5759cc;
+}
+.om-teachers__teacher--eng:hover
+{
+    background-color: #66adf0;
+}
+.om-teachers__teacher--bio:hover
+{
+    background-color: #a475ef;
+}
+.om-teachers__teacher--history:hover
+{
+    background-color: #a8a3f0;
+}
+.om-teachers__teacher--phys:hover
+{
+    background-color: #a3f0f3;
+}
+.om-teachers__teacher--it:hover
+{
+    background-color: #a47fef;
+}
+.om-teachers__teacher:hover .om-teachers__lessons
+{
+    background-color: inherit;
+}
 .om-teachers__filter
 {
     margin: 0;
 
     list-style: none;
 }
+.om-teachers__filter-btn
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 22px;
+
+    position: relative;
+
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+
+    opacity: .5;
+    color: #1c75ba;
+}
+.om-teachers__filter-btn:hover
+{
+    cursor: pointer;
+
+    opacity: 1;
+    background-color: rgba(230, 230, 230, .5);
+}
+.om-teachers__filter-btn--pressed
+{
+    opacity: 1;
+}
+.om-teachers__filter-btn--pressed .om-teachers__check
+{
+    display: inline-block;
+}
+.om-teachers__check
+{
+    position: absolute;
+    top: calc(50% - 11px);
+    left: 20px;
+
+    display: none;
+
+    width: 22px;
+    height: 22px;
+
+    background-image: url(../img/images/icon-check--blue.png);
+}
 .om-teachers__photo
 {
     width: 175px;
     height: 175px;
+    margin-top: 15px;
 
     border-radius: 50%;
 }
@@ -10185,22 +10299,33 @@ footer
     position: relative;
 
     height: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
     color: #fff;
     background-color: #aaa;
 }
-.om-teachers__lessons > i
+.om-teachers__lessons > i:before
 {
-    position: absolute;
-    left: 0;
-
     display: inline-block;
 
-    width: 2em;
-    height: 2em;
+    width: 94px;
+    width: 35px !important;
+    height: 94px;
+    height: 35px !important;
+
+    content: '';
 
     background-image: url('../img/sprites/svg/svg-sprite.svg');
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-position: -94px 0;
+    background-size: 307px 280px;
+    background-size: contain !important;
+}
+.no-svg .om-teachers__lessons > i:before
+{
+    background-image: url('../img/sprites/svg/svg-sprite.png');
+}
+#mixitup .mix
+{
+    display: none;
 }
