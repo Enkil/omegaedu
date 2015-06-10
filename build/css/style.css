@@ -4,6 +4,9 @@
 /* Third party */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import '../../bower_components/social-likes/social-likes_classic.css';
+@import '../../bower_components/owl-carousel2/dist/assets/owl.carousel.css';
+@import '../../bower_components/owl-carousel2/dist/assets/owl.theme.default.css';
+@import '../../bower_components/swiper/dist/css/swiper.css';
 html
 {
     font-family: sans-serif;
@@ -9369,6 +9372,10 @@ footer
 
     margin: 10px 13px;
 }
+.om-btn--slider
+{
+    line-height: normal;
+}
 .om-btn--header-callback
 {
     font-size: 12px;
@@ -9411,6 +9418,150 @@ footer
     text-align: center;
 
     color: #c33;
+}
+.swiper-container
+{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.swiper-slide
+{
+    height: 480px;
+}
+.om-slider > .swiper-pagination
+{
+    bottom: 60px;
+}
+.om-slider .swiper-pagination-bullet
+{
+    background: #fff;
+}
+.om-slider .swiper-pagination-bullet-active
+{
+    background: #fff;
+}
+.om-slider .swiper-button-next,
+.om-slider .swiper-button-prev
+{
+    top: inherit;
+    bottom: 25px;
+
+    width: 36px;
+    height: 36px;
+
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+
+    opacity: .8;
+    background-size: contain;
+}
+.om-slider .swiper-button-next:hover,
+.om-slider .swiper-button-prev:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+
+    opacity: 1;
+}
+.om-slider .swiper-button-next
+{
+    right: 40px;
+
+    background-image: url('../img/images/slider-control--next.png');
+}
+.om-slider .swiper-button-prev
+{
+    left: 40px;
+
+    background-image: url('../img/images/slider-control--prev.png');
+}
+.om-slider__footer
+{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 85px;
+
+    height: 85px;
+
+    color: #fff;
+    background-color: #f2c40d;
+}
+.om-slider-form
+{
+    position: absolute;
+    z-index: 20;
+    top: 35px;
+    right: 35px;
+
+    width: 355px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+    border-radius: 10px;
+    background-color: #fff;
+}
+.om-slider-form__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+
+    margin: 0;
+
+    color: #66c;
+}
+.om-slider-form__title--1
+{
+    color: #66c;
+}
+.om-slider-form__title--2
+{
+    color: #a475ef;
+}
+.om-slider-form__title--3
+{
+    color: #79baa8;
+}
+.om-slider-form__title--4
+{
+    color: #c33;
+}
+.om-slider-form__hr
+{
+    width: 100%;
+    height: 2px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+
+    color: #666;
+}
+.om-slider-form__input
+{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+
+    display: block;
+
+    width: 275px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    color: #66c;
+    border: 1px solid #666;
+    outline: none;
+    background-color: #fff;
+}
+.om-slider-form__input:hover,
+.om-slider-form__input:focus
+{
+    border: 1px solid #1c75ba;
 }
 .om-form
 {
@@ -9464,7 +9615,8 @@ footer
     outline: none;
     background-color: #fff;
 }
-.om-form__input:hover
+.om-form__input:hover,
+.om-form__input:focus
 {
     border: 1px solid #1c75ba;
 }
@@ -9665,6 +9817,13 @@ footer
 
     color: #fff;
 }
+@media (max-width: 400px)
+{
+    .om-directions__text--main
+    {
+        font-size: 20px;
+    }
+}
 .om-text
 {
     padding-top: 45px;
@@ -9780,22 +9939,22 @@ footer
 .om-price__tariff-data--start:hover .om-price__info,
 .om-price__tariff-data--start:hover .om-price__course-price
 {
-    background-color: #fff;
+    background-color: #f8fbfb;
 }
 .om-price__tariff-data--duble:hover .om-price__info,
 .om-price__tariff-data--duble:hover .om-price__course-price
 {
-    background-color: #fff;
+    background-color: #fefcf3;
 }
 .om-price__tariff-data--optim:hover .om-price__info,
 .om-price__tariff-data--optim:hover .om-price__course-price
 {
-    background-color: #dbecfa;
+    background-color: #f3f8fb;
 }
 .om-price__tariff-data--max:hover .om-price__info,
 .om-price__tariff-data--max:hover .om-price__course-price
 {
-    background-color: #fff;
+    background-color: #fef4f5;
 }
 .om-price__tariff
 {
@@ -9890,4 +10049,12 @@ footer
     width: 26px;
     height: 26px;
     margin-bottom: 10px;
+}
+.om-carousel
+{
+    height: 272px;
+}
+.om-carousel img
+{
+    height: 272px;
 }
