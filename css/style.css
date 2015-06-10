@@ -8607,15 +8607,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 */
 .svg-sprite--bio
 {
-    display: inline-block;
-
-    width: 94px;
-    height: 94px;
-
-    background-image: url('../img/sprites/svg/svg-sprite.svg');
-    background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 281px 280px;
 }
 .no-svg .svg-sprite--bio
 {
@@ -8779,12 +8771,14 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
         background-size: 32px 32px;
     }
 }
+.svg-sprite
+{
+    position: relative;
+}
 .svg-sprite:before
 {
-    display: inline-block;
-
-    width: 32px!important;
-    height: 32px!important;
+    width: 35px!important;
+    height: 35px!important;
 
     content: '';
 
@@ -10060,8 +10054,14 @@ footer
 }
 .om-graduates
 {
+    margin-bottom: 100px;
     padding-top: 40px;
     padding-bottom: 55px;
+}
+.om-graduates__wrapper
+{
+    width: 60%;
+    margin: 0 auto;
 }
 .om-graduates__title
 {
@@ -10150,4 +10150,57 @@ footer
     font-size: 18px;
 
     margin-left: 5px;
+}
+.om-teachers
+{
+    margin-top: 50px;
+}
+.om-teachers__filter
+{
+    margin: 0;
+
+    list-style: none;
+}
+.om-teachers__photo
+{
+    width: 175px;
+    height: 175px;
+
+    border-radius: 50%;
+}
+.om-teachers__name
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.om-teachers__lessons
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 12px;
+    line-height: 25px;
+
+    position: relative;
+
+    height: 25px;
+    margin-bottom: 35px;
+
+    color: #fff;
+    background-color: #aaa;
+}
+.om-teachers__lessons > i
+{
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+
+    width: 2em;
+    height: 2em;
+
+    background-image: url('../img/sprites/svg/svg-sprite.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
