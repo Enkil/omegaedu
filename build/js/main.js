@@ -20600,28 +20600,30 @@ $(document).ready(function() {
         lazyLoading: true
     });
     
+    var mySwiper2 = new Swiper ('.swiper-container-2', {
+    // Optional parameters
+        slidesPerView: 1,
+        keyboardControl: true,
+        mousewheelControl: true,
+        mousewheelForceToAxis: true,
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true
+    });
+    
     $('.owl-carousel').owlCarousel({
-        loop:true,
         dots:false,
-        autoWidth:true,
         margin:0,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            }
-        }
+        loop:true,
+        autoWidth:true,
+        items:4
     });
     // Directions
-    if ($(".om-btn").length) {
-        $('.om-btn').click(function(event){
-            $(this).html('Спасибо');
+    if ($('#cta-form').length) {
+        $('#cta-form').submit(function(){
+            $('#cta-form-btn').html('Спасибо');
         });
     }
 

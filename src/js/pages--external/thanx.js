@@ -1,6 +1,6 @@
 // Directions
-if ($(".om-btn").length) {
-    $('.om-btn').click(function(event){
-        $(this).html('Спасибо');
+if ($('#cta-form').length) {
+    $('#cta-form').submit(function(){
+        $('#cta-form-btn').html('Спасибо');
     });
 }
