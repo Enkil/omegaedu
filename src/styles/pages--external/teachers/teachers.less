@@ -1,0 +1,46 @@
+.om-teachers{
+  margin-top: 50px;
+
+  &__filter{
+    list-style: none;
+    margin: 0;
+  }
+  &__filter-btn{
+
+    &--pressed{
+
+    }
+  }
+
+  &__photo{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+  }
+  &__name{
+    .dinpro-reg;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  &__lessons{
+    .dinpro-reg;
+    font-size: 12px;
+    height: 25px;
+    color: @white;
+    background-color: @light-grey;
+    position: relative;
+    line-height: 25px;
+    margin-bottom: 35px;
+    > i{
+      display: inline-block;
+      background-image: url("../img/sprites/svg/svg-sprite.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      width: 2em;
+      height: 2em;
+      background-size: auto 100%;
+    }
+  }
+}

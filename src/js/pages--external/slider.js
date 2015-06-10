@@ -16,15 +16,19 @@ var mySwiper = new Swiper ('.swiper-container', {
 
 var mySwiper2 = new Swiper ('.swiper-container-2', {
 // Optional parameters
-    slidesPerView: 1,
     keyboardControl: true,
     mousewheelControl: true,
-    mousewheelForceToAxis: true,
-    paginationClickable: true,
-    spaceBetween: 30,
     centeredSlides: true,
     grabCursor: true,
-    loop: true
+    effect: 'coverflow',
+    slidesPerView: 'auto',
+    coverflow: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true
+    }
 });
 
 $('.owl-carousel').owlCarousel({
