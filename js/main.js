@@ -22723,5 +22723,13 @@ $(document).ready(function() {
             $('#cta-form-btn').html('Спасибо');
         });
     }
+    // Instantiate MixItUp:
+    
+    $('#mixitup').mixItUp({
+        controls: {
+            toggleFilterButtons: true,
+            activeClass: 'om-teachers__filter-btn--pressed'
+        }
+    });
 
 });
