@@ -10058,3 +10058,96 @@ footer
 {
     height: 272px;
 }
+.om-graduates
+{
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+.om-graduates__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 34px;
+
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    text-transform: uppercase;
+
+    color: #66c;
+}
+.om-graduates__photo
+{
+    display: block;
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    border-radius: 50%;
+}
+.om-graduates__review
+{
+    position: relative;
+
+    padding: 45px 30px 30px 30px;
+
+    background-color: #e2ede2;
+}
+.om-graduates__review-arrow
+{
+    position: absolute;
+    top: -35px;
+    left: calc(50% - 36px);
+
+    width: 0;
+    height: 0;
+
+    border: 36px solid;
+    border-color: transparent transparent #e2ede2 transparent;
+    border-top: 0;
+}
+.om-graduates__reviewer
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 36px;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: #66c;
+}
+@media (max-width: 400px)
+{
+    .om-graduates__reviewer
+    {
+        font-size: 22px;
+    }
+}
+.om-graduates__reviewer-block
+{
+    border-right: 2px solid #000;
+}
+.om-graduates__study
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 21px;
+}
+@media (max-width: 400px)
+{
+    .om-graduates__study
+    {
+        font-size: 18px;
+    }
+}
+.om-graduates__score
+{
+    color: #66c;
+}
+.om-graduates__review-text
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    margin-left: 5px;
+}
