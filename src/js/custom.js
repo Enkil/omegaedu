@@ -8,5 +8,6 @@ $(document).ready(function() {
     //= pages--external/google-map.js
     //= pages--external/opacity-on-hover.js
     //= pages--external/slider.js
+    //= pages--external/thanx.js
 
 });
