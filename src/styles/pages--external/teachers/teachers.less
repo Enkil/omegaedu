@@ -15,9 +15,31 @@
     &--it:hover{  background-color: @lessons-it }
     &:hover{  .om-teachers__lessons{  background-color: inherit;  } }
   }
+
+  .om-teachers__full-card{
+    .om-teachers__teacher{
+      .om-transition();
+      cursor: pointer;
+      &--rus{ background-color: @lessons-rus  }
+      &--math{  background-color: @lessons-math }
+      &--socio{ background-color: @lessons-socio  }
+      &--chemistry{ background-color: @lessons-chemistry  }
+      &--eng{ background-color: @lessons-eng  }
+      &--bio{ background-color: @lessons-bio  }
+      &--history{ background-color: @lessons-history  }
+      &--phys{  background-color: @lessons-phys }
+      &--it{  background-color: @lessons-it }
+      .om-teachers__lessons{  background-color: inherit;  }
+    }
+  }
+
   &__filter{
     list-style: none;
     margin: 0;
+    &--fixed{
+      position: fixed;
+      top: 20px;
+    }
   }
   &__filter-btn{
     .dinpro-reg;
@@ -51,6 +73,7 @@
     width: 175px;
     height: 175px;
     border-radius: 50%;
+    margin: 0 auto;
     margin-top: 15px;
   }
   &__name{
@@ -62,7 +85,6 @@
   &__lessons{
     .dinpro-reg;
     font-size: 12px;
-    height: 25px;
     color: @white;
     background-color: @light-grey;
     position: relative;
@@ -96,6 +118,51 @@
     &:nth-child(4){
       left: 55%;
     }
+  }
+  &__full-card{
+    border: 1px solid @dark;
+    position: relative;
+    padding-left: 0;
+  }
+  &__grade{
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  &__full-card-text{
+    color: @dark;
+    font-size: 14px;
+  }
+  &__full-card-close{
+    position: absolute;
+    font-size: 35px;
+    bottom: 0;
+    right: 10px;
+    cursor: pointer;
+    color: @light-grey;
+    .om-transition();
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &__max-score{
+    .dinpro-bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  &__max-score-num{
+    .dinpro-reg;
+    text-align: center;
+    font-size: 36px;
+    color: @red;
+    margin-top: 30px;
+  }
+  &__star{
+    width: 55px;
+    height: 55px;
+    margin-top: 30px;
   }
 }
 

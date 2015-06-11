@@ -10,5 +10,7 @@ $(document).ready(function() {
     //= pages--external/slider.js
     //= pages--external/thanx.js
     //= pages--external/mixitup.js
+    //= pages--external/teachers-full-card.js
+    //= pages--external/teachers-sidebar-fixed.js
 
 });

@@ -2,7 +2,7 @@
 
 $('#mixitup').mixItUp({
     controls: {
-        toggleFilterButtons: true,
+        //toggleFilterButtons: true,
         activeClass: 'om-teachers__filter-btn--pressed'
     }
 });
