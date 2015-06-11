@@ -10227,11 +10227,62 @@ footer
 {
     background-color: inherit;
 }
+.om-teachers .om-teachers__full-card .om-teachers__teacher
+{
+    cursor: pointer;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--rus
+{
+    background-color: #f06342;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--math
+{
+    background-color: #f2c40d;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--socio
+{
+    background-color: #7acc78;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--chemistry
+{
+    background-color: #5759cc;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--eng
+{
+    background-color: #66adf0;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--bio
+{
+    background-color: #a475ef;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--history
+{
+    background-color: #a8a3f0;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--phys
+{
+    background-color: #a3f0f3;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher--it
+{
+    background-color: #a47fef;
+}
+.om-teachers .om-teachers__full-card .om-teachers__teacher .om-teachers__lessons
+{
+    background-color: inherit;
+}
 .om-teachers__filter
 {
     margin: 0;
 
     list-style: none;
+}
+.om-teachers__filter--fixed
+{
+    position: fixed;
+    top: 20px;
 }
 .om-teachers__filter-btn
 {
@@ -10279,6 +10330,7 @@ footer
 {
     width: 175px;
     height: 175px;
+    margin: 0 auto;
     margin-top: 15px;
 
     border-radius: 50%;
@@ -10299,7 +10351,6 @@ footer
 
     position: relative;
 
-    height: 25px;
     margin-bottom: 20px;
 
     color: #fff;
@@ -10349,6 +10400,72 @@ footer
 .om-teachers__icon:nth-child(4)
 {
     left: 55%;
+}
+.om-teachers__full-card
+{
+    position: relative;
+
+    padding-left: 0;
+
+    border: 1px solid #666;
+}
+.om-teachers__grade
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 30px;
+}
+.om-teachers__full-card-text
+{
+    font-size: 14px;
+
+    color: #666;
+}
+.om-teachers__full-card-close
+{
+    font-size: 35px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+    cursor: pointer;
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
+
+    color: #aaa;
+}
+.om-teachers__full-card-close:hover
+{
+    opacity: .8;
+}
+.om-teachers__max-score
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 18px;
+
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    text-align: center;
+}
+.om-teachers__max-score-num
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 36px;
+
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #c33;
+}
+.om-teachers__star
+{
+    width: 55px;
+    height: 55px;
+    margin-top: 30px;
 }
 #mixitup .mix
 {
