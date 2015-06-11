@@ -13,7 +13,6 @@
     <meta name="description" content="ОМЕГА - все, что нужно для экзаменов">
     <meta name="author" content="Igor Timohin">
     <meta name="language" content="Russian">
-    <meta http-equiv="content-language" content="ru">
     <meta name="keywords" content="егэ,гиа,подготовка к экзаменам,подготовка к вузам,">
     <meta name="application-name" content="ОМЕГА - все, что нужно для экзаменов">
     <meta name="msapplication-tooltip" content="ОМЕГА - все, что нужно для экзаменов">
@@ -67,7 +66,7 @@
 
     <!-- Set external libraries -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.min.css" />
 
     <!-- Put this script tag to the <head> of your page -->
@@ -111,12 +110,11 @@
 
             <div class="col-xs-5 pull-right text-right">
                 <div class="om-header__icon-group">
-                    <i class="om-header__icon-vk-like"><!-- Put this div tag to the place, where the Like block will be -->
-                        <div id="vk_like"></div>
-                        <script type="text/javascript">
-                            VK.Widgets.Like("vk_like", {type: "button"});
-                        </script>
-                    </i>
+                    <!-- Put this div tag to the place, where the Like block will be -->
+                    <div class="om-header__icon-vk-like" id="vk_like"></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Like("vk_like", {type: "button"});
+                    </script>
                     <a href="https://vk.com" target="_blank"><i class="icon-vkontakte-rect"></i></a>
                 </div>
                 <a class="om-header__phone" href="tel:+74951344517">8 (495) 134 45 17</a>
@@ -124,7 +122,7 @@
                     <i class="icon-phone-circled"></i>
                     <span class="om-header__callme">Перезвоните мне</span>
                     <div class="om-header__callme-form">
-                        <form action="">
+                        <form action="#">
                             <input type="text" class="om-form__input om-form__input--header-callback" required placeholder="фамилия"/>
                             <input type="text" class="om-form__input om-form__input--header-callback" required placeholder="имя"/>
                             <input type="tel" class="om-form__input om-form__input--header-callback" required placeholder="телефон"/>
@@ -151,13 +149,13 @@
 
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="">О Центре</a></li>
+                <li><a href="index.html#about">О Центре</a></li>
                 <li><a href="index.html#directions-main">Предметы</a></li>
                 <li><a href="teachers.html" class="active">Преподаватели</a></li>
                 <li><a href="index.html#reviews">Отзывы</a></li>
-                <li><a href="">Расписание</a></li>
+                <li><a href="timetable.html">Расписание</a></li>
                 <li><a href="price.html">Цены</a></li>
-                <li><a href="">Франчайзинг</a></li>
+                <li><a href="franch.html">Франчайзинг</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
@@ -171,13 +169,13 @@
         <main>
 
             <!-- Slider main container -->
-<div class="swiper-container om-slider hidden-xs">
+<div class="swiper-container om-slider hidden-xs" id="about">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
 
         <div class="swiper-slide">
-            <img src="img/images/slider-image-1.png" alt="" class="scale" data-parent="swiper-container" data-scale="fill"/>
+            <img src="img/images/slider-image-1.png" alt="Омега. Все, что нужно для экзаменов" class="scale" data-parent="swiper-container" data-scale="fill"/>
             <form class="om-slider-form text-center" action="#">
                 <h3 class="om-slider-form__title om-slider-form__title--1">Запишитесь<br/>на бесплатное<br/>пробное тестирование</h3>
                 <hr class="om-slider-form__hr"/>
@@ -188,7 +186,7 @@
         </div>
 
         <div class="swiper-slide">
-            <img src="img/images/slider-image-2.jpg" alt="" class="scale" data-parent="swiper-container" data-scale="fill"/>
+            <img src="img/images/slider-image-2.jpg" alt="Омега. Все, что нужно для экзаменов" class="scale" data-parent="swiper-container" data-scale="fill"/>
             <form class="om-slider-form text-center" action="#">
                 <h3 class="om-slider-form__title om-slider-form__title--2">Запишитесь<br/>на бесплатное<br/>пробное тестирование</h3>
                 <hr class="om-slider-form__hr"/>
@@ -199,7 +197,7 @@
         </div>
 
         <div class="swiper-slide">
-            <img src="img/images/slider-image-3.png" alt="" class="scale" data-parent="swiper-container" data-scale="fill"/>
+            <img src="img/images/slider-image-3.png" alt="Омега. Все, что нужно для экзаменов" class="scale" data-parent="swiper-container" data-scale="fill"/>
             <form class="om-slider-form text-center" action="#">
                 <h3 class="om-slider-form__title om-slider-form__title--3">Оставить заявку</h3>
                 <hr class="om-slider-form__hr"/>
@@ -210,7 +208,7 @@
         </div>
 
         <div class="swiper-slide">
-            <img src="img/images/slider-image-4.jpg" alt="" class="scale" data-parent="swiper-container" data-scale="fill"/>
+            <img src="img/images/slider-image-4.jpg" alt="Омега. Все, что нужно для экзаменов" class="scale" data-parent="swiper-container" data-scale="fill"/>
             <form class="om-slider-form text-center" action="#">
                 <h3 class="om-slider-form__title om-slider-form__title--4">Оставить заявку</h3>
                 <hr class="om-slider-form__hr"/>
@@ -333,30 +331,30 @@
     </div>
     <div class="row">
         <div class="col-xs-8 col-xs-push-2">
-            <p class="om-teachers-index__subtext">
+            <h2 class="om-teachers-index__subtext">
                 И еще 7 преподавателей, которые учатся или
                 закончили ведущие технические вузы Москвы
                 и готовы помочь вам успешно сдалть ЕГЭ.
-            </p>
+            </h2>
         </div>
     </div>
 </section>
 
             <!-- Photo carousel -->
-<section class="om-carousel">
+<div class="om-carousel">
 
     <div class="owl-carousel">
-        <img src="img/images/corusel-1.png" alt=""/>
-        <img src="img/images/corusel-1.png" alt=""/>
-        <img src="img/images/corusel-2.png" alt=""/>
-        <img src="img/images/corusel-2.png" alt=""/>
-        <img src="img/images/corusel-3.png" alt=""/>
-        <img src="img/images/corusel-3.png" alt=""/>
-        <img src="img/images/corusel-4.png" alt=""/>
-        <img src="img/images/corusel-4.png" alt=""/>
+        <img src="img/images/corusel-1.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-1.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-2.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-2.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-3.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-3.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-4.png" alt="Омега. Все, что нужно для экзаменов"/>
+        <img src="img/images/corusel-4.png" alt="Омега. Все, что нужно для экзаменов"/>
     </div>
 
-</section>
+</div>
 
             <!-- Reasons -->
 <section class="om-reasons">
@@ -389,7 +387,7 @@
         <div class="row">
             <div class="col-xs-36 text-center">
 
-                <p class="om-press__title">Убедили?</p>
+                <h2 class="om-press__title">Убедили?</h2>
                 <p class="om-press__click">Жмите на кнопку!</p>
                 <a class="om-btn om-btn--cta" href="#cta-form">Оставить заявку</a>
 
@@ -623,7 +621,7 @@
     </div>
 </section>
 
-            <section id="omega-on-map"></section>
+            <div id="omega-on-map"></div>
 <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
 
         </main>
@@ -634,14 +632,14 @@
         <div class="row">
 
             <div class="col-xs-12 col-md-2">
-                <a class="om-footer__logo hidden-xs" href="index.html"><img src="img/images/omega-logo.png" alt=""/></a>
+                <a class="om-footer__logo hidden-xs" href="index.html"><img src="img/images/omega-logo.png" alt="Омега. Все, что нужно для экзаменов"/></a>
                 <a class="om-footer__contacts om-footer__contacts--thirst" href="tel:+74951344517">8 (495) 134 45 17</a>
                 <a class="om-footer__contacts" href="mailto:omegaedu@gmail.com">omegaedu@gmail.com</a>
             </div>
 
             <div class="col-xs-6 col-md-2 col-md-offset-1">
                 <ul class="om-footer__links-list">
-                    <li><a class="om-footer__links" href="#about">О Центре</a></li>
+                    <li><a class="om-footer__links" href="index#about">О Центре</a></li>
                     <li><a class="om-footer__links" href="index.html#directions-main">Предметы</a></li>
                     <li><a class="om-footer__links" href="teachers.html">Преподаватели</a></li>
                     <li><a class="om-footer__links" href="index.html#reviews">Отзывы</a></li>
@@ -660,7 +658,7 @@
             <div class="col-xs-5 hidden-xs hidden-sm">
                 <table>
                     <tr>
-                        <td><img class="om-footer__blackquote-img" src="img/images/blackquote.png" alt=""/></td>
+                        <td><img class="om-footer__blackquote-img" src="img/images/blackquote.png" alt="Омега. Все, что нужно для экзаменов"/></td>
                         <td><span class="om-footer__blackquote-txt"><q>Сколько б ты не жил, всю жизнь следует учиться.</q> <br/> Сенека</span></td>
                     </tr>
                 </table>
