@@ -10183,6 +10183,7 @@ footer
 }
 .om-teachers__teacher
 {
+    cursor: pointer;
     -webkit-transition: .5s ease all;
             transition: .5s ease all;
 }
@@ -10324,6 +10325,30 @@ footer
 .no-svg .om-teachers__lessons > i:before
 {
     background-image: url('../img/sprites/svg/svg-sprite.png');
+}
+.om-teachers__icon
+{
+    position: absolute;
+    top: calc(50% - 17px);
+    left: 35%;
+
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+}
+.om-teachers__icon:nth-child(2)
+{
+    z-index: 5;
+}
+.om-teachers__icon:nth-child(3)
+{
+    z-index: 3;
+    left: 45%;
+}
+.om-teachers__icon:nth-child(4)
+{
+    left: 55%;
 }
 #mixitup .mix
 {

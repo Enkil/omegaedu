@@ -3,6 +3,7 @@
 
   &__teacher{
     .om-transition();
+    cursor: pointer;
     &--rus:hover{ background-color: @lessons-rus  }
     &--math:hover{  background-color: @lessons-math }
     &--socio:hover{ background-color: @lessons-socio  }
@@ -76,6 +77,24 @@
         height: 35px !important;
         background-size: contain !important;
       }
+    }
+  }
+  &__icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 35%;
+    top: calc(~"50% - 17px");
+    &:nth-child(2){
+      z-index: 5;
+    }
+    &:nth-child(3){
+      left: 45%;
+      z-index: 3;
+    }
+    &:nth-child(4){
+      left: 55%;
     }
   }
 }
