@@ -10542,9 +10542,10 @@ footer
 .om-timetable__table
 {
     width: 100%;
+    min-height: 400px;
     margin-top: 40px;
 
-    border-spacing: 2px;
+    border-spacing: 5px;
     border-collapse: separate;
 
     text-align: center;
@@ -10646,9 +10647,12 @@ footer
 {
     min-width: 100px;
 
+    -webkit-transition: .5s ease all;
+            transition: .5s ease all;
     vertical-align: top;
 
     background-color: rgba(230, 230, 230, .3);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .75);
 }
 .om-timetable__day-name
 {
