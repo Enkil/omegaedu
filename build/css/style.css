@@ -10644,6 +10644,8 @@ footer
 }
 .om-timetable__day
 {
+    min-width: 100px;
+
     vertical-align: top;
 
     background-color: rgba(230, 230, 230, .3);
