@@ -10467,7 +10467,195 @@ footer
     height: 55px;
     margin-top: 30px;
 }
-#mixitup .mix
+#mixitup-teachers .mix
+{
+    display: none;
+}
+.om-timetable
+{
+    margin-top: 50px;
+}
+.om-timetable__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 22px;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    color: #1c75ba;
+}
+.om-timetable__filter
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.om-timetable__filter--fixed
+{
+    position: fixed;
+    top: 20px;
+}
+.om-timetable__filter-btn
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 22px;
+
+    position: relative;
+
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+
+    opacity: .5;
+    color: #1c75ba;
+}
+.om-timetable__filter-btn:hover
+{
+    cursor: pointer;
+
+    opacity: 1;
+    background-color: rgba(230, 230, 230, .5);
+}
+.om-timetable__filter-btn--pressed
+{
+    opacity: 1;
+}
+.om-timetable__filter-btn--pressed .om-teachers__check
+{
+    display: inline-block;
+}
+.om-timetable__filter-btn--human
+{
+    color: #1c75ba;
+}
+.om-timetable__filter-btn--tech
+{
+    color: #c33;
+}
+.om-timetable__filter-btn--socio-science
+{
+    color: #79baa8;
+}
+.om-timetable__table
+{
+    width: 100%;
+    margin-top: 40px;
+
+    border-spacing: 2px;
+    border-collapse: separate;
+
+    text-align: center;
+}
+.om-timetable__classroom
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 18px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    background-color: rgba(230, 230, 230, .3);
+}
+.om-timetable__classroom > div
+{
+    width: 50px;
+    margin-top: 80px;
+    padding-top: 10px;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.om-timetable__time
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    white-space: nowrap;
+}
+.om-timetable__time > div
+{
+    width: 50px;
+    margin-top: 80px;
+    padding-top: 10px;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.om-timetable__free-place
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 10px;
+    line-height: 24px;
+
+    color: #fff;
+}
+.om-timetable__free-place--human
+{
+    background-color: #1c75ba;
+}
+.om-timetable__free-place--tech
+{
+    background-color: #c33;
+}
+.om-timetable__free-place--socio-science
+{
+    background-color: #79baa8;
+}
+.om-timetable__marker
+{
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.om-timetable__marker--human
+{
+    background-color: #1c75ba;
+}
+.om-timetable__marker--tech
+{
+    background-color: #c33;
+}
+.om-timetable__marker--socio-science
+{
+    background-color: #79baa8;
+}
+.om-timetable__lesson
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+}
+.om-timetable__lesson > span
+{
+    font-size: 10px;
+}
+.om-timetable__teacher
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 10px;
+}
+.om-timetable__day
+{
+    vertical-align: top;
+
+    background-color: rgba(230, 230, 230, .3);
+}
+.om-timetable__day-name
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    padding-bottom: 10px;
+}
+#mixitup-timetable .mix
 {
     display: none;
 }

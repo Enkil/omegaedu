@@ -12,5 +12,6 @@ $(document).ready(function() {
     //= pages--external/mixitup.js
     //= pages--external/teachers-full-card.js
     //= pages--external/teachers-sidebar-fixed.js
+    //= pages--external/timetable-sidebar-fixed.js
 
 });
