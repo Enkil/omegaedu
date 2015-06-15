@@ -2,42 +2,35 @@
 ** Make elements opacity on hover
  */
 
-// Reasons
-if ($(".om-reasons").length) {
-    $('.js__reason--hover').mouseenter(function(event){
-        $('.js__reason--hover').not(this).animate({opacity:0.5},250);
+function opacityOnHover(selector) {
+
+    var element = $(selector);
+
+    element.mouseenter(function(){
+        element.not(this).stop().animate({'opacity':0.5}, 300);
     });
-    $('.js__reason--hover').mouseleave(function(event){
-        $('.js__reason--hover').animate({opacity:1},500);
+
+    element.mouseleave(function(){
+        element.stop().animate({'opacity':1}, 300);
     });
 }
 
-// Directions
+// Reasons
+if ($(".om-reasons").length) {
+    var reasons = new opacityOnHover('.js__reason--hover');
+}
+
+//Directions
 if ($(".om-directions--main").length) {
-    $('.js__directions--hover').mouseenter(function(event){
-        $('.js__directions--hover').not(this).animate({opacity:0.5},250);
-    });
-    $('.js__directions--hover').mouseleave(function(event){
-        $('.js__directions--hover').animate({opacity:1},500);
-    });
+    var directions = new opacityOnHover('.js__directions--hover');
 }
 
 // Prices EGE
 if ($(".om-price").length) {
-    $('.js__tariff-ege').mouseenter(function(event){
-        $('.js__tariff-ege').not(this).animate({opacity:0.5},100);
-    });
-    $('.js__tariff-ege').mouseleave(function(event){
-        $('.js__tariff-ege').animate({opacity:1},500);
-    });
+    var pricesEge = new opacityOnHover('.js__tariff-ege');
 }
 
 // Prices OGE
 if ($(".om-price").length) {
-    $('.js__tariff-oge').mouseenter(function(event){
-        $('.js__tariff-oge').not(this).animate({opacity:0.5},100);
-    });
-    $('.js__tariff-oge').mouseleave(function(event){
-        $('.js__tariff-oge').animate({opacity:1},500);
-    });
+    var pricesOge = new opacityOnHover('.js__tariff-oge');
 }

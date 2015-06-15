@@ -1,0 +1,119 @@
+.om-franch-lead{
+  background-color: @blue;
+  &__img{
+    margin-top: 65px;
+    margin-bottom: 35px;
+  }
+}
+
+.om-franch-form{
+  margin-top: 65px;
+
+  &__title{
+    .dinpro-reg;
+    font-size: 25px;
+    color: @white;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+    > span {  color: @yellow; }
+  }
+  &__input{
+    .dinpro-reg;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    width: 325px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    color: @violet;
+  }
+}
+
+.om-franch-why{
+
+  &__title{
+    .dinpro-bold;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+    color: @blue;
+  }
+  &__img{
+    width: 128px;
+    height: 128px;
+    margin-bottom: 25px;
+  }
+  &__text{
+    .dinpro-reg;
+    font-size: 24px;
+    margin-bottom: 35px;
+    > span {  color: @red;  }
+  }
+  &__line{
+    position: absolute;
+    height: 1px;
+    border-bottom: 1px dashed @light-grey;
+    width: 170%;
+    left: 66%;
+    top: 19%;
+    @media (max-width: 990px) {
+      left: 75%;
+      top: 13%;
+    }
+  }
+}
+
+.om-franch-slogan{
+  background-color: @red;
+  &__text{
+    .dinpro-reg;
+    font-size: 26px;
+    color: @white;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    > span{ .dinpro-bold;  }
+  }
+}
+
+.om-franch-result{
+
+  &__title{
+    .dinpro-bold;
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: @blue;
+    text-align: center;
+  }
+  &__text{
+    .dinpro-reg;
+    font-size: 24px;
+    margin-bottom: 70px;
+    position: relative;
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 101px;
+      height: 85px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -150px;
+    }
+    &--1:before{
+      background-image: url('../img/images/result-1.png');
+    }
+    &--2:before{
+      background-image: url('../img/images/result-2.png');
+    }
+    &--3:before{
+      background-image: url('../img/images/result-3.png');
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -9359,6 +9359,25 @@ footer
 
     outline: none;
 }
+.om-btn--franch-lead
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+    line-height: 40px;
+
+    width: 325px;
+    margin-bottom: 35px;
+
+    color: #aaa;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2c40d;
+}
+.om-btn--franch-lead:hover
+{
+    color: #f2c40d;
+    background-color: #aaa;
+}
 .om-btn--cta
 {
     font-size: 15px;
@@ -10078,16 +10097,31 @@ footer
 {
     height: 272px;
 }
+.swiper-container-2
+{
+    width: 100%;
+}
+.swiper-container-2 .swiper-button-next,
+.swiper-container-2 .swiper-button-prev
+{
+    top: 70%;
+}
+.swiper-container-2 .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container-2 .swiper-slide-active
+{
+    opacity: 1!important;
+}
 .om-graduates
 {
-    margin-bottom: 100px;
+    position: relative;
+
+    overflow: hidden;
+
     padding-top: 40px;
     padding-bottom: 55px;
-}
-.om-graduates__wrapper
-{
-    width: 60%;
-    margin: 0 auto;
 }
 .om-graduates__title
 {
@@ -10652,7 +10686,10 @@ footer
     vertical-align: top;
 
     background-color: rgba(230, 230, 230, .3);
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .75);
+}
+.om-timetable__day--not-checked
+{
+    opacity: .3;
 }
 .om-timetable__day-name
 {
@@ -10664,4 +10701,167 @@ footer
 #mixitup-timetable .mix
 {
     display: none;
+}
+.om-franch-lead
+{
+    background-color: #1c75ba;
+}
+.om-franch-lead__img
+{
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+.om-franch-form
+{
+    margin-top: 65px;
+}
+.om-franch-form__title
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 25px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.om-franch-form__title > span
+{
+    color: #f2c40d;
+}
+.om-franch-form__input
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+    line-height: 40px;
+
+    width: 325px;
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    color: #66c;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.om-franch-why__title
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 28px;
+
+    margin-top: 50px;
+    margin-bottom: 55px;
+
+    text-transform: uppercase;
+
+    color: #1c75ba;
+}
+.om-franch-why__img
+{
+    width: 128px;
+    height: 128px;
+    margin-bottom: 25px;
+}
+.om-franch-why__text
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+
+    margin-bottom: 35px;
+}
+.om-franch-why__text > span
+{
+    color: #c33;
+}
+.om-franch-why__line
+{
+    position: absolute;
+    top: 19%;
+    left: 66%;
+
+    width: 170%;
+    height: 1px;
+
+    border-bottom: 1px dashed #aaa;
+}
+@media (max-width: 990px)
+{
+    .om-franch-why__line
+    {
+        top: 13%;
+        left: 75%;
+    }
+}
+.om-franch-slogan
+{
+    background-color: #c33;
+}
+.om-franch-slogan__text
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 26px;
+    line-height: 1.5;
+
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.om-franch-slogan__text > span
+{
+    font-family: 'DinProBold', sans-serif !important;
+}
+.om-franch-result__title
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 26px;
+
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    color: #1c75ba;
+}
+.om-franch-result__text
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+
+    position: relative;
+
+    margin-bottom: 70px;
+}
+.om-franch-result__text:before
+{
+    position: absolute;
+    left: -150px;
+
+    display: inline-block;
+
+    width: 101px;
+    height: 85px;
+
+    content: '';
+
+    background-repeat: no-repeat;
+}
+.om-franch-result__text--1:before
+{
+    background-image: url('../img/images/result-1.png');
+}
+.om-franch-result__text--2:before
+{
+    background-image: url('../img/images/result-2.png');
+}
+.om-franch-result__text--3:before
+{
+    margin-bottom: 20px;
+
+    background-image: url('../img/images/result-3.png');
 }
