@@ -22695,19 +22695,15 @@ $(document).ready(function() {
     
     var mySwiper2 = new Swiper ('.swiper-container-2', {
     // Optional parameters
-        keyboardControl: true,
-        mousewheelControl: true,
-        centeredSlides: true,
-        grabCursor: true,
-        effect: 'coverflow',
-        slidesPerView: 'auto',
-        coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true
-        }
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        slidesPerView: 1,
+        loop: true,
+        effect: 'fade',
+        keyboardControl: true
     });
     
     $('.owl-carousel').owlCarousel({
@@ -22738,28 +22734,28 @@ $(document).ready(function() {
         event.preventDefault();
         $('.om-timetable__filter-btn').removeClass('om-timetable__filter-btn--pressed');
         $(this).addClass('om-timetable__filter-btn--pressed');
-        $('.category-tech, .category-socio-science, .category-human').removeClass('invisible');
-        $('.category-tech, .category-socio-science').addClass('invisible')
+        $('.category-tech, .category-socio-science, .category-human').removeClass('om-timetable__day--not-checked');
+        $('.category-tech, .category-socio-science').addClass('om-timetable__day--not-checked')
     });
     $('.om-timetable__filter-btn--tech').click(function(event){
         event.preventDefault();
         $('.om-timetable__filter-btn').removeClass('om-timetable__filter-btn--pressed');
         $(this).addClass('om-timetable__filter-btn--pressed');
-        $('.category-tech, .category-socio-science, .category-human').removeClass('invisible');
-        $('.category-human, .category-socio-science').addClass('invisible')
+        $('.category-tech, .category-socio-science, .category-human').removeClass('om-timetable__day--not-checked');
+        $('.category-human, .category-socio-science').addClass('om-timetable__day--not-checked')
     });
     $('.om-timetable__filter-btn--socio-science').click(function(event){
         event.preventDefault();
         $('.om-timetable__filter-btn').removeClass('om-timetable__filter-btn--pressed');
         $(this).addClass('om-timetable__filter-btn--pressed');
-        $('.category-tech, .category-socio-science, .category-human').removeClass('invisible');
-        $('.category-tech, .category-human').addClass('invisible')
+        $('.category-tech, .category-socio-science, .category-human').removeClass('om-timetable__day--not-checked');
+        $('.category-tech, .category-human').addClass('om-timetable__day--not-checked')
     });
     $('.om-timetable__filter-btn--all').click(function(event){
         event.preventDefault();
         $('.om-timetable__filter-btn').removeClass('om-timetable__filter-btn--pressed');
         $(this).addClass('om-timetable__filter-btn--pressed');
-        $('.category-tech, .category-socio-science, .category-human').removeClass('invisible')
+        $('.category-tech, .category-socio-science, .category-human').removeClass('om-timetable__day--not-checked')
     });
     // Show/Hide teacher full card
     if ($('.om-teachers__full-card-close').length) {

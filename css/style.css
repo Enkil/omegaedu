@@ -10078,16 +10078,31 @@ footer
 {
     height: 272px;
 }
+.swiper-container-2
+{
+    width: 100%;
+}
+.swiper-container-2 .swiper-button-next,
+.swiper-container-2 .swiper-button-prev
+{
+    top: 70%;
+}
+.swiper-container-2 .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container-2 .swiper-slide-active
+{
+    opacity: 1!important;
+}
 .om-graduates
 {
-    margin-bottom: 100px;
+    position: relative;
+
+    overflow: hidden;
+
     padding-top: 40px;
     padding-bottom: 55px;
-}
-.om-graduates__wrapper
-{
-    width: 60%;
-    margin: 0 auto;
 }
 .om-graduates__title
 {
@@ -10652,7 +10667,10 @@ footer
     vertical-align: top;
 
     background-color: rgba(230, 230, 230, .3);
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .75);
+}
+.om-timetable__day--not-checked
+{
+    opacity: .3;
 }
 .om-timetable__day-name
 {
