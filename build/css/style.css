@@ -10816,6 +10816,13 @@ footer
 {
     font-family: 'DinProBold', sans-serif !important;
 }
+.om-franch-slogan__text--exp
+{
+    padding: 50px 0;
+
+    text-align: left;
+    text-transform: none;
+}
 .om-franch-result__title
 {
     font-family: 'DinProBold', sans-serif !important;
