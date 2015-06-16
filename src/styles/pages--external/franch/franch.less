@@ -79,6 +79,7 @@
     line-height: 1.5;
     > span{ .dinpro-bold;  }
     &--exp{
+      font-size: 24px;
       text-transform: none;
       text-align: left;
       padding: 50px 0;
@@ -120,5 +121,63 @@
       background-image: url('../img/images/result-3.png');
       margin-bottom: 20px;
     }
+  }
+}
+
+.om-franch-feauture{
+  width: 255px;
+  height: 420px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  background-color: rgba(230,230,230,.3);
+  &__icon{
+    display: block;
+    margin-bottom: 25px;
+    width: 165px!important;
+  }
+  &__text{
+    .dinpro-reg;
+    font-size: 18px;
+    color: @dark;
+    margin-bottom: 0;
+    > span {  color: @red;  }
+  }
+}
+
+.owl-franch{
+  margin-top: 40px;
+
+  .owl-controls{
+    position: absolute;
+    width: 100%;
+    top: -15px;
+  }
+  .owl-prev{
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 420px;
+    width: 90px;
+    background-color: @white!important;
+    box-shadow: 50px 0 43px 20px @white;
+  }
+  .owl-next{
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 420px;
+    width: 90px;
+    background-color: @white!important;
+    box-shadow: -50px 0 43px 20px @white;
+  }
+  .btn-arrow-img{
+    position: absolute;
+    top: calc(~'50% - 17px');
+    opacity: 0.7;
+    &:hover{  opacity: 1}
+    &--prev{  left: 20px  }
+    &--next{  right: 20px }
   }
 }

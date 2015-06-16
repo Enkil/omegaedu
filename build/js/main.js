@@ -22706,6 +22706,21 @@ $(document).ready(function() {
         autoWidth:true,
         items:4
     });
+    
+    $('.owl-franch').owlCarousel({
+        dots:false,
+        margin:20,
+        loop:true,
+        autoWidth:true,
+        items:3,
+        center: true,
+        startPosition: 3,
+        nav: true,
+        navText: [
+            "<img class='btn-arrow-img btn-arrow-img--prev' src='img/images/franch-slider-control--prev.png'>",
+            "<img class='btn-arrow-img btn-arrow-img--next' src='img/images/franch-slider-control--next.png'>"
+        ]
+    });
     // Directions
     if ($('#cta-form').length) {
         $('#cta-form').submit(function(){
