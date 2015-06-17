@@ -10768,6 +10768,13 @@ footer
     border-radius: 10px;
     outline: none;
 }
+@media (max-width: 400px)
+{
+    .om-franch-form__input
+    {
+        width: 250px;
+    }
+}
 @media (max-width: 1199px)
 {
     .om-franch-solutions__tab-form .om-franch-form__input
