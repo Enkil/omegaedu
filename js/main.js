@@ -22721,12 +22721,7 @@ $(document).ready(function() {
             "<img class='btn-arrow-img btn-arrow-img--next' src='img/images/franch-slider-control--next.png'>"
         ]
     });
-    // Directions
-    if ($('#cta-form').length) {
-        $('#cta-form').submit(function(){
-            $('#cta-form-btn').html('Спасибо');
-        });
-    }
+    // //= pages--external/thanx.js
     // Instantiate MixItUp:
     
     $('#mixitup-teachers').mixItUp({
