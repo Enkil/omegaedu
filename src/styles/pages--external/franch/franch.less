@@ -29,6 +29,9 @@
     margin-bottom: 15px;
     outline: none;
     color: @violet;
+    @media (max-width: 400px) {
+      width: 250px;
+    }
     .om-franch-solutions__tab-form & {
       @media (max-width: 1199px) {
         width: 250px;
@@ -277,11 +280,17 @@
   &__list-right{
     display: table-cell;
     padding-left: 100px;
+    @media (max-width: 400px) {
+      padding-left: 20px;
+    }
     > mark {  background-color: @blue; color: @white;}
   }
   &__list-left{
     display: table-cell;
     width: 200px;
+    @media (max-width: 400px) {
+      width: 150px;
+    }
     &:before{
       content: '';
       display: inline-block;
