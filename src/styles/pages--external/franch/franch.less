@@ -29,6 +29,11 @@
     margin-bottom: 15px;
     outline: none;
     color: @violet;
+    .om-franch-solutions__tab-form & {
+      @media (max-width: 1199px) {
+        width: 250px;
+      }
+    }
   }
 }
 
@@ -144,6 +149,16 @@
     margin-bottom: 0;
     > span {  color: @red;  }
   }
+  .om-franch-solutions__tab-content & {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    width: 230px;
+    height: 270px;
+    background-color: transparent;
+  }
 }
 
 .owl-franch{
@@ -179,5 +194,127 @@
     &:hover{  opacity: 1}
     &--prev{  left: 20px  }
     &--next{  right: 20px }
+  }
+}
+
+.om-franch-solutions{
+
+  &__title{
+    .dinpro-bold;
+    display: inline-block;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: @blue;
+    float: left;
+  }
+  &__tab{
+    .dinpro-bold;
+    font-size: 36px;
+    opacity: .5;
+    color: @blue!important;
+    border: none!important;
+    text-transform: uppercase;
+    &:hover{  opacity: 1; color: @blue!important; background-color: transparent!important;}
+    &:focus {  opacity: 1; color: @blue!important;}
+    &.active {  opacity: 1; color: @blue!important;}
+  }
+  .nav-tabs {
+    float: right;
+    border: none;
+  }
+  .nav-tabs>li.active {
+    border-bottom: 5px solid @blue;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    opacity: 1; color: @blue!important; background-color: transparent!important;
+  }
+  &__tab-content{
+    margin-top: 30px;
+    border-top: 1px dashed @dark;
+  }
+  &__tab-title{
+    .dinpro-bold;
+    font-size: 34px;
+    color: @blue;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    &--omega{ color:@violet; }
+    &--omegacons{ color:@red; }
+  }
+  &__slogan{
+    .dinpro-reg;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    &--small{
+      font-size: 18px;
+      margin-bottom: 60px;
+      text-transform: none;
+      margin-top: 25px;
+    }
+  }
+  &__list{
+    padding-left: 15px;
+  }
+  &__list-item{
+    .dinpro-reg;
+    display: table;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: @blue;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px dashed @dark;
+    &:last-child{
+      border-bottom: none;
+    }
+    &--omega{ color: @violet; }
+  }
+  &__list-right{
+    display: table-cell;
+    padding-left: 100px;
+    > mark {  background-color: @blue; color: @white;}
+  }
+  &__list-left{
+    display: table-cell;
+    width: 200px;
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: @blue;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  &__tab-form{
+    background-color: @blue;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &--omega{
+      background-color: @violet;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    &--omegacons{
+      background-color: @red;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+  &__tab-form-text{
+    .dinpro-bold;
+    font-size: 34px;
+    color: @white;
+    > span {
+      .dinpro-reg;
+      font-size: 30px;
+    }
+    &:first-child{  margin-bottom: 45px; }
+    &:nth-child(2){  margin-bottom: 40px;  }
   }
 }

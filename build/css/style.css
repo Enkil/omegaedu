@@ -9378,6 +9378,13 @@ footer
     color: #f2c40d;
     background-color: #aaa;
 }
+@media (max-width: 1199px)
+{
+    .om-franch-solutions__tab-form .om-btn--franch-lead
+    {
+        width: 250px;
+    }
+}
 .om-btn--cta
 {
     font-size: 15px;
@@ -10747,6 +10754,13 @@ footer
     border-radius: 10px;
     outline: none;
 }
+@media (max-width: 1199px)
+{
+    .om-franch-solutions__tab-form .om-franch-form__input
+    {
+        width: 250px;
+    }
+}
 .om-franch-why__title
 {
     font-family: 'DinProBold', sans-serif !important;
@@ -10905,6 +10919,20 @@ footer
 {
     color: #c33;
 }
+.om-franch-solutions__tab-content .om-franch-feauture
+{
+    display: inline-block;
+    float: left;
+
+    width: 230px;
+    height: 270px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    text-align: center;
+
+    background-color: transparent;
+}
 .owl-franch
 {
     margin-top: 40px;
@@ -10960,4 +10988,218 @@ footer
 .owl-franch .btn-arrow-img--next
 {
     right: 20px;
+}
+.om-franch-solutions__title
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 36px;
+
+    display: inline-block;
+    float: left;
+
+    text-transform: uppercase;
+
+    color: #1c75ba;
+}
+.om-franch-solutions__tab
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 36px;
+
+    text-transform: uppercase;
+
+    opacity: .5;
+    color: #1c75ba !important;
+    border: none!important;
+}
+.om-franch-solutions__tab:hover
+{
+    opacity: 1;
+    color: #1c75ba !important;
+    background-color: transparent!important;
+}
+.om-franch-solutions__tab:focus
+{
+    opacity: 1;
+    color: #1c75ba !important;
+}
+.om-franch-solutions__tab.active
+{
+    opacity: 1;
+    color: #1c75ba !important;
+}
+.om-franch-solutions .nav-tabs
+{
+    float: right;
+
+    border: none;
+}
+.om-franch-solutions .nav-tabs > li.active
+{
+    border-bottom: 5px solid #1c75ba;
+}
+.om-franch-solutions .nav-tabs > li.active > a,
+.om-franch-solutions .nav-tabs > li.active > a:focus,
+.om-franch-solutions .nav-tabs > li.active > a:hover
+{
+    opacity: 1;
+    color: #1c75ba !important;
+    background-color: transparent!important;
+}
+.om-franch-solutions__tab-content
+{
+    margin-top: 30px;
+
+    border-top: 1px dashed #666;
+}
+.om-franch-solutions__tab-title
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 34px;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    text-align: left;
+
+    color: #1c75ba;
+}
+.om-franch-solutions__tab-title--omega
+{
+    color: #66c;
+}
+.om-franch-solutions__tab-title--omegacons
+{
+    color: #c33;
+}
+.om-franch-solutions__slogan
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 24px;
+
+    margin-bottom: 35px;
+
+    text-transform: uppercase;
+}
+.om-franch-solutions__slogan--small
+{
+    font-size: 18px;
+
+    margin-top: 25px;
+    margin-bottom: 60px;
+
+    text-transform: none;
+}
+.om-franch-solutions__list
+{
+    padding-left: 15px;
+}
+.om-franch-solutions__list-item
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    display: table;
+
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: left;
+
+    color: #1c75ba;
+    border-bottom: 1px dashed #666;
+}
+.om-franch-solutions__list-item:last-child
+{
+    border-bottom: none;
+}
+.om-franch-solutions__list-item--omega
+{
+    color: #66c;
+}
+.om-franch-solutions__list-right
+{
+    display: table-cell;
+
+    padding-left: 100px;
+}
+.om-franch-solutions__list-right > mark
+{
+    color: #fff;
+    background-color: #1c75ba;
+}
+.om-franch-solutions__list-left
+{
+    display: table-cell;
+
+    width: 200px;
+}
+.om-franch-solutions__list-left:before
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    content: '';
+
+    border-radius: 50%;
+    background-color: #1c75ba;
+}
+.om-franch-solutions__tab-form
+{
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    background-color: #1c75ba;
+}
+.om-franch-solutions__tab-form--omega
+{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: #66c;
+}
+.om-franch-solutions__tab-form--omegacons
+{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: #c33;
+}
+.om-franch-solutions__tab-form-text
+{
+    font-family: 'DinProBold', sans-serif !important;
+    font-size: 34px;
+
+    color: #fff;
+}
+.om-franch-solutions__tab-form-text > span
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 30px;
+}
+.om-franch-solutions__tab-form-text:first-child
+{
+    margin-bottom: 45px;
+}
+.om-franch-solutions__tab-form-text:nth-child(2)
+{
+    margin-bottom: 40px;
+}
+.non-padl
+{
+    padding-left: 0;
+}
+.non-padr
+{
+    padding-right: 0;
+}
+.non-pad
+{
+    padding-right: 0;
+    padding-left: 0;
 }
