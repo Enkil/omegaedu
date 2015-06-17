@@ -11167,6 +11167,13 @@ footer
 
     width: 200px;
 }
+@media (max-width: 400px)
+{
+    .om-franch-solutions__list-left
+    {
+        width: 150px;
+    }
+}
 .om-franch-solutions__list-left:before
 {
     display: inline-block;
