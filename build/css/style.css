@@ -9349,6 +9349,23 @@ footer
 {
     quotes: '\00ab' '\00bb';
 }
+.om-erp-login
+{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #666;
+}
+.om-erp-login:before
+{
+    display: inline-block;
+
+    margin-right: 10px;
+
+    content: url(../img/images/erp-login.png);
+    vertical-align: middle;
+}
 .om-btn
 {
     display: inline-block;
