@@ -8829,10 +8829,6 @@ header .navbar .nav > li a
     -webkit-transition: .5s ease all;
             transition: .5s ease all;
 }
-header .navbar .nav > li a:hover
-{
-    border-bottom: 4px solid #000;
-}
 header .active
 {
     color: #333!important;
@@ -9799,7 +9795,7 @@ footer
     -webkit-transition: .5s ease all;
             transition: .5s ease all;
 
-    color: #e6e6e6;
+    color: #666;
 }
 .om-teachers-index__text:hover
 {
@@ -10465,7 +10461,7 @@ footer
 
     padding-left: 0;
 
-    border: 1px solid #666;
+    border: 1px solid #aaa;
 }
 .om-teachers__grade
 {
@@ -10483,6 +10479,7 @@ footer
 .om-teachers__full-card-close
 {
     font-size: 35px;
+    font-weight: 100;
 
     position: absolute;
     right: 10px;
@@ -10500,7 +10497,7 @@ footer
 }
 .om-teachers__max-score
 {
-    font-family: 'DinProBold', sans-serif !important;
+    font-family: 'DinProRegular', sans-serif !important;
     font-size: 18px;
 
     margin-top: 30px;

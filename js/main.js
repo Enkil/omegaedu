@@ -22679,11 +22679,7 @@ $(document).ready(function() {
         keyboardControl: true,
         paginationClickable: true,
         spaceBetween: 30,
-        loop: true,
-           // Disable preloading of all images
-        preloadImages: false,
-           // Enable lazy loading
-        lazyLoading: true
+        loop: true
     });
     
     var mySwiper2 = new Swiper ('.swiper-container-2', {
