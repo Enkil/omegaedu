@@ -9386,6 +9386,13 @@ footer
     border-radius: 10px;
     background-color: #f2c40d;
 }
+@media (max-width: 400px)
+{
+    .om-btn--franch-lead
+    {
+        width: 250px;
+    }
+}
 .om-btn--franch-lead:hover
 {
     color: #f2c40d;
