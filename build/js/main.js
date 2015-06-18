@@ -22516,9 +22516,7 @@ else if (typeof define === 'function' && define.amd) {
 
 $(document).ready(function() {
 
-    $(function() {
-        $("img.scale").imageScale();
-    });
+    // //= common/image-scale.js
     /* Omega on map */
     var omega = {
         map: null,
