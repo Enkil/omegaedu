@@ -10559,6 +10559,14 @@ footer
 {
     position: fixed;
     top: 20px;
+    right: 0;
+}
+.om-timetable__filter-subtext
+{
+    font-family: 'DinProRegular', sans-serif !important;
+    font-size: 18px;
+
+    margin-top: 40px;
 }
 .om-timetable__filter-btn
 {
@@ -10569,7 +10577,6 @@ footer
 
     height: 40px;
     padding-top: 5px;
-    padding-left: 50px;
 
     opacity: .5;
     color: #1c75ba;
@@ -10587,6 +10594,8 @@ footer
 }
 .om-timetable__filter-btn--pressed .om-teachers__check
 {
+    left: -30px;
+
     display: inline-block;
 }
 .om-timetable__filter-btn--human
