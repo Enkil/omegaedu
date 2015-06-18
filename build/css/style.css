@@ -10438,12 +10438,18 @@ footer
 {
     background-image: url('../img/sprites/svg/svg-sprite.png');
 }
-.om-teachers__icon
+.om-teachers__icons
 {
     position: absolute;
-    top: calc(50% - 17px);
-    left: 35%;
+    top: calc(50% - 25px);
+    left: 0;
 
+    display: table;
+
+    width: 100%;
+}
+.om-teachers__icon
+{
     display: inline-block;
 
     width: 35px;
@@ -10456,11 +10462,6 @@ footer
 .om-teachers__icon:nth-child(3)
 {
     z-index: 3;
-    left: 45%;
-}
-.om-teachers__icon:nth-child(4)
-{
-    left: 55%;
 }
 .om-teachers__full-card
 {
