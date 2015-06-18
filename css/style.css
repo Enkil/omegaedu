@@ -9195,23 +9195,8 @@ header .dropdown-menu a:hover
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/dinpro/DINPRO-REGULAR.otf') format('opentype');
-}
-@font-face
-{
-    font-family: 'DinProMedium';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('fonts/dinpro/DINPRO-MEDIUM.otf') format('opentype');
-}
-@font-face
-{
-    font-family: 'DinProLight';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('fonts/dinpro/DINPRO-LIGHT.otf') format('opentype');
+    src: url('fonts/DINPRO-REGULAR.eot');
+    src: local('☺'), url('fonts/DINPRO-REGULAR.woff') format('woff'), url('fonts/DINPRO-REGULAR.ttf') format('truetype'), url('fonts/DINPRO-REGULAR.svg') format('svg');
 }
 @font-face
 {
@@ -9219,35 +9204,16 @@ header .dropdown-menu a:hover
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/dinpro/DINPRO-BOLD.otf') format('opentype');
-}
-@font-face
-{
-    font-family: 'DinProBlack';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('fonts/dinpro/DINPRO-BLACK.otf') format('opentype');
+    src: url('fonts/dinpro-conv/DINPRO-REGULAR.eot');
+    src: local('☺'), url('fonts/dinpro-conv/DINPRO-REGULAR.woff') format('woff'), url('fonts/dinpro-conv/DINPRO-REGULAR.ttf') format('truetype'), url('fonts/dinpro-conv/DINPRO-REGULAR.svg') format('svg');
 }
 .dinpro-reg
 {
     font-family: 'DinProRegular', sans-serif !important;
 }
-.dinpro-med
-{
-    font-family: 'DinProMedium', sans-serif !important;
-}
-.dinpro-light
-{
-    font-family: 'DinProLight', sans-serif !important;
-}
 .dinpro-bold
 {
     font-family: 'DinProBold', sans-serif !important;
-}
-.dinpro-black
-{
-    font-family: 'DinProBlack', sans-serif !important;
 }
 .open-sans
 {
@@ -9495,6 +9461,30 @@ footer
 {
     height: 480px;
 }
+.om-slider__slide--1
+{
+    background-color: #66c;
+}
+.om-slider__slide--2
+{
+    background-color: #a475ef;
+}
+.om-slider__slide--3
+{
+    background-color: #79baa8;
+}
+.om-slider__slide--4
+{
+    background-color: #c33;
+}
+.om-slider__img
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    margin-top: 85px;
+}
 .om-slider > .swiper-pagination
 {
     bottom: 60px;
@@ -9557,12 +9547,10 @@ footer
 }
 .om-slider-form
 {
-    position: absolute;
-    z-index: 20;
-    top: 35px;
-    right: 35px;
-
-    width: 355px;
+    width: 100%;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 35px;
     padding-bottom: 50px;
 
@@ -9612,7 +9600,7 @@ footer
 
     display: block;
 
-    width: 275px;
+    width: 80%;
     height: 40px;
     margin: 0 auto;
     margin-bottom: 18px;
