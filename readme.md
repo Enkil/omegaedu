@@ -4,8 +4,8 @@ New Front-End for OmegaEdu project.
 
 ## Team
 
-Designer: [Nadejda Voskresenskaja](https://vk.com/id17166)
-Front-End Developer: me =)
+* Designer: [Nadejda Voskresenskaja](https://vk.com/id17166)
+* Front-End Developer: me =)
 
 ## Technology
 
