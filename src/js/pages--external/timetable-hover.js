@@ -1,9 +1,11 @@
 $('.om-timetable__time').hover(
     function()  {
+        $(this).css({'background-color':'#f2c40d'});
         $(".om-timetable__time:not(:hover)").siblings().addClass('om-timetable__day--not-checked');
     },
     function()  {
-        $(".om-timetable__time:not(:hover)").siblings().removeClass('om-timetable__day--not-checked');
+        $(this).css({'background-color':'transparent'});
+        $(".om-timetable__time").siblings().removeClass('om-timetable__day--not-checked');
     }
 );
 

@@ -6,7 +6,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     slidesPerView: 1,
     keyboardControl: true,
     paginationClickable: true,
-    spaceBetween: 30,
+    spaceBetween: 0,
     loop: true
 });
 
@@ -16,7 +16,7 @@ var mySwiper2 = new Swiper ('.swiper-container-2', {
     paginationClickable: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    spaceBetween: 30,
+    spaceBetween: 0,
     slidesPerView: 1,
     loop: true,
     effect: 'fade',
