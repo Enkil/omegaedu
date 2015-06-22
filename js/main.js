@@ -22676,7 +22676,7 @@ $(document).ready(function() {
         slidesPerView: 1,
         keyboardControl: true,
         paginationClickable: true,
-        spaceBetween: 30,
+        spaceBetween: 0,
         loop: true
     });
     
@@ -22686,7 +22686,7 @@ $(document).ready(function() {
         paginationClickable: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
+        spaceBetween: 0,
         slidesPerView: 1,
         loop: true,
         effect: 'fade',
@@ -22795,10 +22795,12 @@ $(document).ready(function() {
     });
     $('.om-timetable__time').hover(
         function()  {
+            $(this).css({'background-color':'#f2c40d'});
             $(".om-timetable__time:not(:hover)").siblings().addClass('om-timetable__day--not-checked');
         },
         function()  {
-            $(".om-timetable__time:not(:hover)").siblings().removeClass('om-timetable__day--not-checked');
+            $(this).css({'background-color':'transparent'});
+            $(".om-timetable__time").siblings().removeClass('om-timetable__day--not-checked');
         }
     );
     

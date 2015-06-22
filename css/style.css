@@ -9245,8 +9245,9 @@ header .dropdown-menu a:hover
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/DINPRO-REGULAR.eot');
-    src: local('☺'), url('fonts/DINPRO-REGULAR.woff') format('woff'), url('fonts/DINPRO-REGULAR.ttf') format('truetype'), url('fonts/DINPRO-REGULAR.svg') format('svg');
+    src: url('fonts/dinpro-conv/DINPRO-REGULAR.eot');
+    src: url('fonts/dinpro/DINPRO-REGULAR.otf');
+    src: local('☺'), url('fonts/dinpro-conv/DINPRO-REGULAR.ttf') format('truetype'), url('fonts/dinpro-conv/DINPRO-REGULAR.svg') format('svg');
 }
 @font-face
 {
@@ -9254,8 +9255,9 @@ header .dropdown-menu a:hover
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/dinpro-conv/DINPRO-REGULAR.eot');
-    src: local('☺'), url('fonts/dinpro-conv/DINPRO-REGULAR.woff') format('woff'), url('fonts/dinpro-conv/DINPRO-REGULAR.ttf') format('truetype'), url('fonts/dinpro-conv/DINPRO-REGULAR.svg') format('svg');
+    src: url('fonts/dinpro-conv/DINPRO-BOLD.eot');
+    src: url('fonts/dinpro/DINPRO-BOLD.otf');
+    src: local('☺'), url('fonts/dinpro-conv/DINPRO-BOLD.ttf') format('truetype'), url('fonts/dinpro-conv/DINPRO-BOLD.svg') format('svg');
 }
 .dinpro-reg
 {
@@ -9278,7 +9280,6 @@ div
 }
 footer
 {
-    margin-top: 20px;
     padding-top: 35px;
     padding-bottom: 60px;
 
@@ -9376,6 +9377,25 @@ footer
     margin-right: 10px;
 
     content: url(../img/images/erp-login.png);
+    vertical-align: middle;
+}
+.copyright
+{
+    font-size: 10px;
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #666;
+}
+.copyright:before
+{
+    display: inline-block;
+
+    margin-right: 10px;
+
+    content: url(../img/svg/shiva.svg);
     vertical-align: middle;
 }
 .om-btn
@@ -9687,7 +9707,7 @@ footer
 
     color: #fff;
 }
-@media (max-width: 360px)
+@media (max-width: 400px)
 {
     .om-form__title
     {
@@ -9792,6 +9812,13 @@ footer
 
     color: #fff;
 }
+@media (max-width: 400px)
+{
+    .om-reasons__text
+    {
+        font-size: 30px;
+    }
+}
 .om-reasons__reason-img
 {
     width: 112px;
@@ -9842,6 +9869,13 @@ footer
 
     color: #666;
 }
+@media (max-width: 400px)
+{
+    .om-teachers-index__text
+    {
+        font-size: 16px;
+    }
+}
 .om-teachers-index__text:hover
 {
     color: #000;
@@ -9854,6 +9888,13 @@ footer
     margin-top: 80px;
 
     color: #c33;
+}
+@media (max-width: 400px)
+{
+    .om-teachers-index__subtext
+    {
+        font-size: 30px;
+    }
 }
 .om-directions
 {
@@ -9885,6 +9926,13 @@ footer
     text-transform: uppercase;
 
     color: #66c;
+}
+@media (max-width: 400px)
+{
+    .om-directions__title
+    {
+        font-size: 30px;
+    }
 }
 .om-directions__title--main
 {
@@ -9925,7 +9973,9 @@ footer
 {
     .om-directions__text--main
     {
-        font-size: 20px;
+        font-size: 16px;
+
+        height: 45px;
     }
 }
 .om-text
@@ -11076,6 +11126,7 @@ footer
 .om-franch-solutions
 {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .om-franch-solutions__title
 {
