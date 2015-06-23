@@ -134,13 +134,21 @@
 }
 
 .om-franch-feauture{
-  width: 255px;
-  height: 420px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 20px;
-  padding-bottom: 15px;
+//  width: 255px;
+//  height: 420px;
+  width: 258px;
+  height: 334px;
+//  padding-top: 15px;
+//  padding-right: 15px;
+//  padding-left: 20px;
+//  padding-bottom: 15px;
   background-color: rgba(230,230,230,.3);
+
+  &__block{
+    width: 258px;
+    height: 334px;
+  }
+
   &__icon{
     display: block;
     margin-bottom: 25px;
@@ -177,7 +185,7 @@
     position: absolute;
     left: 0;
     display: block;
-    height: 420px;
+    height: 334px;
     width: 90px;
     background-color: @white!important;
     box-shadow: 50px 0 43px 20px @white;
@@ -186,7 +194,7 @@
     position: absolute;
     right: 0;
     display: block;
-    height: 420px;
+    height: 334px;
     width: 90px;
     background-color: @white!important;
     box-shadow: -50px 0 43px 20px @white;
@@ -205,6 +213,17 @@
 
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 60px;
+
+  .nav-tabs{
+    width: 100%;
+    > li {
+      margin-right: 100px;
+      &:first-child{
+        margin-left: 50px;
+      }
+    }
+  }
 
   &__title{
     .dinpro-bold;
@@ -268,8 +287,8 @@
     .dinpro-reg;
     display: table;
     font-size: 18px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     color: @blue;
     text-align: left;
     width: 100%;
@@ -306,17 +325,17 @@
   }
   &__tab-form{
     background-color: @blue;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     &--omega{
       background-color: @violet;
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
     &--omegacons{
       background-color: @red;
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
   }
   &__tab-form-text{
