@@ -11025,14 +11025,15 @@ footer
 }
 .om-franch-feauture
 {
-    width: 255px;
-    height: 420px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    width: 258px;
+    height: 334px;
 
     background-color: rgba(230, 230, 230, .3);
+}
+.om-franch-feauture__block
+{
+    width: 258px;
+    height: 334px;
 }
 .om-franch-feauture__icon
 {
@@ -11087,7 +11088,7 @@ footer
     display: block;
 
     width: 90px;
-    height: 420px;
+    height: 334px;
 
     background-color: #fff !important;
     box-shadow: 50px 0 43px 20px #fff;
@@ -11100,7 +11101,7 @@ footer
     display: block;
 
     width: 90px;
-    height: 420px;
+    height: 334px;
 
     background-color: #fff !important;
     box-shadow: -50px 0 43px 20px #fff;
