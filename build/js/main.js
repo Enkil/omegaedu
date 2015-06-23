@@ -22677,6 +22677,8 @@ $(document).ready(function() {
         keyboardControl: true,
         paginationClickable: true,
         spaceBetween: 0,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
         loop: true
     });
     

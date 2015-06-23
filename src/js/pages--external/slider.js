@@ -7,6 +7,8 @@ var mySwiper = new Swiper ('.swiper-container', {
     keyboardControl: true,
     paginationClickable: true,
     spaceBetween: 0,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
     loop: true
 });
 
