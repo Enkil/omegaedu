@@ -11128,6 +11128,7 @@ footer
 {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 60px;
 }
 .om-franch-solutions__title
 {
@@ -11242,8 +11243,8 @@ footer
     display: table;
 
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 
     text-align: left;
 
@@ -11305,22 +11306,22 @@ footer
 }
 .om-franch-solutions__tab-form
 {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     background-color: #1c75ba;
 }
 .om-franch-solutions__tab-form--omega
 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     background-color: #66c;
 }
 .om-franch-solutions__tab-form--omegacons
 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 
     background-color: #c33;
 }
