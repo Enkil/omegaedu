@@ -11130,6 +11130,18 @@ footer
     margin-bottom: 20px;
     margin-left: 60px;
 }
+.om-franch-solutions .nav-tabs
+{
+    width: 100%;
+}
+.om-franch-solutions .nav-tabs > li
+{
+    margin-right: 100px;
+}
+.om-franch-solutions .nav-tabs > li:first-child
+{
+    margin-left: 50px;
+}
 .om-franch-solutions__title
 {
     font-family: 'DinProBold', sans-serif !important;
