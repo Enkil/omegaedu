@@ -8,9 +8,17 @@ var mySwiper = new Swiper ('.swiper-container', {
     paginationClickable: true,
     spaceBetween: 0,
     autoplay: 2500,
-    autoplayDisableOnInteraction: false,
     loop: true
 });
+
+$('.swiper-slide').hover(
+    function(){
+        mySwiper.stopAutoplay();
+    },
+    function(){
+        mySwiper.startAutoplay();
+    }
+);
 
 var mySwiper2 = new Swiper ('.swiper-container-2', {
 // Optional parameters
