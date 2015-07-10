@@ -14,5 +14,7 @@ $(document).ready(function() {
     //= pages--external/teachers-sidebar-fixed.js
     //= pages--external/timetable-sidebar-fixed.js
     //= pages--external/timetable-hover.js
+    //= pages--external/subjects-full-card.js
+    //= pages--external/subjects-sidebar-fixed.js
 
 });

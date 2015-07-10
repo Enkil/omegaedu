@@ -2,12 +2,17 @@
 
 $('#mixitup-teachers').mixItUp({
     controls: {
-        //toggleFilterButtons: true,
         activeClass: 'om-teachers__filter-btn--pressed'
     }
 });
 
-// Filter timetable category-human
+$('#mixitup-subjects').mixItUp({
+    controls: {
+        activeClass: 'om-subjects__filter-btn--pressed'
+    }
+});
+
+// Filter timetable category
 
 $('.om-timetable__filter-btn--human').click(function(event){
     event.preventDefault();
