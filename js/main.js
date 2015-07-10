@@ -22730,12 +22730,17 @@ $(document).ready(function() {
     
     $('#mixitup-teachers').mixItUp({
         controls: {
-            //toggleFilterButtons: true,
             activeClass: 'om-teachers__filter-btn--pressed'
         }
     });
     
-    // Filter timetable category-human
+    $('#mixitup-subjects').mixItUp({
+        controls: {
+            activeClass: 'om-subjects__filter-btn--pressed'
+        }
+    });
+    
+    // Filter timetable category
     
     $('.om-timetable__filter-btn--human').click(function(event){
         event.preventDefault();
@@ -22824,5 +22829,35 @@ $(document).ready(function() {
             $(".om-timetable__classroom:not(:hover)").closest('table').find('.om-timetable__day').removeClass('om-timetable__day--not-checked')
         }
     );
+    //// Show/Hide subject full card
+    if ($('.om-subjects__full-card-close').length) {
+    
+        // show by click on small card
+        $('.om-subjects__item').click(function(){
+            scrollBack = $(this);
+            $('.om-subjects__full-card').removeClass('hidden');
+            $('html, body').animate({
+                scrollTop: $(".om-subjects__full-card").offset().top
+            }, 1000);
+        });
+    
+        // hide by click on cross
+        $('.om-subjects__full-card-close').click(function(){
+            $('.om-subjects__full-card').addClass('hidden');
+            $('html, body').animate({
+                scrollTop: scrollBack.offset().top
+            }, 1000);
+        });
+    }
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 250) $('.om-subjects__filter').addClass('om-subjects__filter--fixed');
+        else $('.om-subjects__filter').removeClass('om-subjects__filter--fixed');
+    });
+    
+    $(window).on("scroll", function() {
+        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+        if (scrollBottom < 50) $('.om-subjects__filter').removeClass('om-subjects__filter--fixed');
+        //else $('.om-subjects__filter').addClass('om-subjects__filter--fixed');
+    });
 
 });
